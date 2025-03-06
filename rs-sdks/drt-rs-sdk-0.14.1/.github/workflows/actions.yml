@@ -26,11 +26,11 @@ jobs:
         run: |
           source .github/workflows/env
           ./build-wasm.sh
-      # # Running the mandos tests through Andes is not yet stable enough
-      # - name: Run the wasm mandos tests
+      # # Running the denali tests through Andes is not yet stable enough
+      # - name: Run the wasm denali tests
       #   run: |
       #     source .github/workflows/env
-      #     mandos-test .
+      #     denali-test .
   rust_test:
     name: Rust tests
     runs-on: ubuntu-latest
