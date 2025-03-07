@@ -9,7 +9,7 @@ use crate::{
 /// Address of the system smart contract that manages DCDT.
 /// Bech32: drt1qqqqqqqqqqqqqqqpqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqzllls6prdez
 pub const DCDT_SYSTEM_SC_ADDRESS_ARRAY: [u8; 32] =
-	hex!("000000000000000000010000000000000000000000000000000000000002ffff");
+	hex!("233300000000000000000000000000000002333000000000000000000002ffff");
 
 pub fn dcdt_system_sc_address() -> Address {
 	Address::from(DCDT_SYSTEM_SC_ADDRESS_ARRAY)
