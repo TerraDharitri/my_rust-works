@@ -1,0 +1,544 @@
+{
+    "buildInfo": {
+        "rustc": {
+            "version": "1.80.1",
+            "commitHash": "3f5fd8dd41153bc5fdca9427e9e05be2c767ba23",
+            "commitDate": "2024-08-06",
+            "channel": "Stable",
+            "short": "rustc 1.80.1 (3f5fd8dd4 2024-08-06)"
+        },
+        "contractCrate": {
+            "name": "forwarder-raw",
+            "version": "0.0.0"
+        },
+        "framework": {
+            "name": "dharitri-sc",
+            "version": "0.52.3"
+        }
+    },
+    "docs": [
+        "Test contract for investigating async calls.",
+        "TODO: split into modules"
+    ],
+    "name": "ForwarderRaw",
+    "constructor": {
+        "inputs": [],
+        "outputs": []
+    },
+    "endpoints": [
+        {
+            "name": "callback_args",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "variadic<List<bytes>>",
+                    "multi_result": true
+                }
+            ]
+        },
+        {
+            "name": "callback_payments",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "variadic<tuple<RewaOrDcdtTokenIdentifier,u64,BigUint>>",
+                    "multi_result": true
+                }
+            ]
+        },
+        {
+            "name": "callback_payments_triples",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "variadic<multi<RewaOrDcdtTokenIdentifier,u64,BigUint>>",
+                    "multi_result": true
+                }
+            ]
+        },
+        {
+            "name": "clear_callback_info",
+            "mutability": "mutable",
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "docs": [
+                "Used in the numbat-go tests, do not remove."
+            ],
+            "name": "callback_args_at_index",
+            "mutability": "readonly",
+            "inputs": [
+                {
+                    "name": "index",
+                    "type": "u32"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "variadic<bytes>",
+                    "multi_result": true
+                }
+            ]
+        },
+        {
+            "docs": [
+                "Used in the numbat-go tests, do not remove."
+            ],
+            "name": "callback_payment_at_index",
+            "mutability": "readonly",
+            "inputs": [
+                {
+                    "name": "index",
+                    "type": "u32"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "RewaOrDcdtTokenIdentifier"
+                },
+                {
+                    "type": "u64"
+                },
+                {
+                    "type": "BigUint"
+                }
+            ]
+        },
+        {
+            "name": "forward_payment",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [
+                {
+                    "name": "to",
+                    "type": "Address"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "forward_direct_dcdt_via_transf_exec",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [
+                {
+                    "name": "to",
+                    "type": "Address"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "forward_direct_dcdt_multi",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [
+                {
+                    "name": "to",
+                    "type": "Address"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "forward_async_call",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [
+                {
+                    "name": "to",
+                    "type": "Address"
+                },
+                {
+                    "name": "endpoint_name",
+                    "type": "bytes"
+                },
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "forward_async_call_half_payment",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [
+                {
+                    "name": "to",
+                    "type": "Address"
+                },
+                {
+                    "name": "endpoint_name",
+                    "type": "bytes"
+                },
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "forward_transf_exec_rewa",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "REWA"
+            ],
+            "inputs": [
+                {
+                    "name": "to",
+                    "type": "Address"
+                },
+                {
+                    "name": "endpoint_name",
+                    "type": "bytes"
+                },
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "forward_transf_exec_dcdt",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [
+                {
+                    "name": "to",
+                    "type": "Address"
+                },
+                {
+                    "name": "endpoint_name",
+                    "type": "bytes"
+                },
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "forward_transf_exec",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [
+                {
+                    "name": "to",
+                    "type": "Address"
+                },
+                {
+                    "name": "endpoint_name",
+                    "type": "bytes"
+                },
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "forward_transf_exec_twice",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [
+                {
+                    "name": "to",
+                    "type": "Address"
+                },
+                {
+                    "name": "endpoint_name",
+                    "type": "bytes"
+                },
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "forward_async_retrieve_multi_transfer_funds",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "to",
+                    "type": "Address"
+                },
+                {
+                    "name": "token_payments",
+                    "type": "variadic<multi<TokenIdentifier,u64,BigUint>>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "forwarder_async_send_and_retrieve_multi_transfer_funds",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "to",
+                    "type": "Address"
+                },
+                {
+                    "name": "token_payments",
+                    "type": "variadic<multi<TokenIdentifier,u64,BigUint>>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "call_execute_on_dest_context",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "REWA"
+            ],
+            "inputs": [
+                {
+                    "name": "to",
+                    "type": "Address"
+                },
+                {
+                    "name": "endpoint_name",
+                    "type": "bytes"
+                },
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "call_execute_on_dest_context_twice",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "REWA"
+            ],
+            "inputs": [
+                {
+                    "name": "to",
+                    "type": "Address"
+                },
+                {
+                    "name": "endpoint_name",
+                    "type": "bytes"
+                },
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "call_execute_on_same_context",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "REWA"
+            ],
+            "inputs": [
+                {
+                    "name": "to",
+                    "type": "Address"
+                },
+                {
+                    "name": "endpoint_name",
+                    "type": "bytes"
+                },
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "call_execute_on_dest_context_readonly",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "to",
+                    "type": "Address"
+                },
+                {
+                    "name": "endpoint_name",
+                    "type": "bytes"
+                },
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "deploy_contract",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "code",
+                    "type": "bytes"
+                },
+                {
+                    "name": "code_metadata",
+                    "type": "CodeMetadata"
+                },
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "Address"
+                },
+                {
+                    "type": "List<bytes>"
+                }
+            ]
+        },
+        {
+            "name": "deploy_from_source",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "source_contract_address",
+                    "type": "Address"
+                },
+                {
+                    "name": "code_metadata",
+                    "type": "CodeMetadata"
+                },
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "Address"
+                }
+            ]
+        },
+        {
+            "name": "call_upgrade",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "child_sc_address",
+                    "type": "Address"
+                },
+                {
+                    "name": "new_code",
+                    "type": "bytes"
+                },
+                {
+                    "name": "code_metadata",
+                    "type": "CodeMetadata"
+                },
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "call_upgrade_from_source",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "sc_address",
+                    "type": "Address"
+                },
+                {
+                    "name": "source_contract_address",
+                    "type": "Address"
+                },
+                {
+                    "name": "code_metadata",
+                    "type": "CodeMetadata"
+                },
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        }
+    ],
+    "events": [
+        {
+            "identifier": "callback_raw",
+            "inputs": [
+                {
+                    "name": "arguments",
+                    "type": "List<bytes>"
+                }
+            ]
+        },
+        {
+            "identifier": "execute_on_dest_context_result",
+            "inputs": [
+                {
+                    "name": "result",
+                    "type": "List<bytes>"
+                }
+            ]
+        },
+        {
+            "identifier": "execute_on_same_context_result",
+            "inputs": [
+                {
+                    "name": "result",
+                    "type": "List<bytes>"
+                }
+            ]
+        }
+    ],
+    "dcdtAttributes": [],
+    "hasCallback": true,
+    "types": {}
+}

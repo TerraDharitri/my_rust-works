@@ -1,0 +1,32 @@
+{
+    "docs": [
+        "One of the simplest smart contracts possible,",
+        "it holds a single variable in storage, which anyone can increment."
+    ],
+    "name": "Adder",
+    "endpoints": [
+        {
+            "name": "getSum",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigInt"
+                }
+            ]
+        },
+        {
+            "docs": [
+                "Add desired amount to the storage variable."
+            ],
+            "name": "add",
+            "inputs": [
+                {
+                    "name": "value",
+                    "type": "BigInt"
+                }
+            ],
+            "outputs": []
+        }
+    ],
+    "types": {}
+}

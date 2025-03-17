@@ -1,0 +1,105 @@
+{
+    "buildInfo": {
+        "rustc": {
+            "version": "1.84.1",
+            "commitHash": "e71f9a9a98b0faf423844bf0ba7438f29dc27d58",
+            "commitDate": "2025-01-27",
+            "channel": "Stable",
+            "short": "rustc 1.84.1 (e71f9a9a9 2025-01-27)"
+        },
+        "contractCrate": {
+            "name": "forwarder-raw",
+            "version": "0.0.0"
+        },
+        "framework": {
+            "name": "dharitri-sc",
+            "version": "1.0.1"
+        }
+    },
+    "docs": [
+        "Test contract for investigating async calls.",
+        "TODO: split into modules"
+    ],
+    "name": "ForwarderRaw",
+    "constructor": {
+        "docs": [
+            "Will not work, only written for VM testing.",
+            "",
+            "Async calls are explicitly forbidden in constructors."
+        ],
+        "inputs": [
+            {
+                "name": "to",
+                "type": "Address"
+            },
+            {
+                "name": "endpoint_name",
+                "type": "bytes"
+            },
+            {
+                "name": "args",
+                "type": "variadic<bytes>",
+                "multi_arg": true
+            }
+        ],
+        "outputs": []
+    },
+    "upgradeConstructor": {
+        "docs": [
+            "Will not work, only written for VM testing.",
+            "",
+            "Async calls are explicitly forbidden in upgrade constructors.",
+            "",
+            "TODO: write test once scenario tests support upgrades directly."
+        ],
+        "inputs": [
+            {
+                "name": "to",
+                "type": "Address"
+            },
+            {
+                "name": "endpoint_name",
+                "type": "bytes"
+            },
+            {
+                "name": "args",
+                "type": "variadic<bytes>",
+                "multi_arg": true
+            }
+        ],
+        "outputs": []
+    },
+    "endpoints": [],
+    "events": [
+        {
+            "identifier": "callback_raw",
+            "inputs": [
+                {
+                    "name": "arguments",
+                    "type": "List<bytes>"
+                }
+            ]
+        },
+        {
+            "identifier": "execute_on_dest_context_result",
+            "inputs": [
+                {
+                    "name": "result",
+                    "type": "List<bytes>"
+                }
+            ]
+        },
+        {
+            "identifier": "execute_on_same_context_result",
+            "inputs": [
+                {
+                    "name": "result",
+                    "type": "List<bytes>"
+                }
+            ]
+        }
+    ],
+    "dcdtAttributes": [],
+    "hasCallback": true,
+    "types": {}
+}

@@ -1,0 +1,92 @@
+{
+    "buildInfo": {
+        "rustc": {
+            "version": "1.84.1",
+            "commitHash": "e71f9a9a98b0faf423844bf0ba7438f29dc27d58",
+            "commitDate": "2025-01-27",
+            "channel": "Stable",
+            "short": "rustc 1.84.1 (e71f9a9a9 2025-01-27)"
+        },
+        "contractCrate": {
+            "name": "vault",
+            "version": "0.0.0"
+        },
+        "framework": {
+            "name": "dharitri-sc",
+            "version": "1.0.1"
+        }
+    },
+    "docs": [
+        "General test contract.",
+        "Used especially for investigating async calls and contract interaction in general."
+    ],
+    "name": "Vault",
+    "upgradeConstructor": {
+        "inputs": [
+            {
+                "name": "opt_arg_to_echo",
+                "type": "optional<bytes>",
+                "multi_arg": true
+            }
+        ],
+        "outputs": [
+            {
+                "type": "utf-8 string"
+            },
+            {
+                "type": "optional<bytes>",
+                "multi_result": true
+            }
+        ]
+    },
+    "endpoints": [],
+    "events": [
+        {
+            "identifier": "upgraded",
+            "inputs": []
+        },
+        {
+            "identifier": "accept_funds",
+            "inputs": [
+                {
+                    "name": "multi_dcdt",
+                    "type": "variadic<multi<TokenIdentifier,u64,BigUint>>",
+                    "indexed": true
+                }
+            ]
+        },
+        {
+            "identifier": "reject_funds",
+            "inputs": [
+                {
+                    "name": "multi_dcdt",
+                    "type": "variadic<multi<TokenIdentifier,u64,BigUint>>",
+                    "indexed": true
+                }
+            ]
+        },
+        {
+            "identifier": "retrieve_funds",
+            "inputs": [
+                {
+                    "name": "token",
+                    "type": "RewaOrDcdtTokenIdentifier",
+                    "indexed": true
+                },
+                {
+                    "name": "nonce",
+                    "type": "u64",
+                    "indexed": true
+                },
+                {
+                    "name": "amount",
+                    "type": "BigUint",
+                    "indexed": true
+                }
+            ]
+        }
+    ],
+    "dcdtAttributes": [],
+    "hasCallback": false,
+    "types": {}
+}

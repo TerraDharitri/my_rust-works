@@ -1,0 +1,93 @@
+{
+    "name": "CryptoBubbles",
+    "endpoints": [
+        {
+            "docs": [
+                "player adds funds"
+            ],
+            "name": "topUp",
+            "payableInTokens": [
+                "REWA"
+            ],
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "docs": [
+                "player withdraws funds"
+            ],
+            "name": "withdraw",
+            "inputs": [
+                {
+                    "name": "amount",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "joinGame",
+            "payableInTokens": [
+                "REWA"
+            ],
+            "inputs": [
+                {
+                    "name": "game_index",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "rewardWinner",
+            "inputs": [
+                {
+                    "name": "game_index",
+                    "type": "BigUint"
+                },
+                {
+                    "name": "winner",
+                    "type": "Address"
+                },
+                {
+                    "name": "prize",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "rewardAndSendToWallet",
+            "inputs": [
+                {
+                    "name": "game_index",
+                    "type": "BigUint"
+                },
+                {
+                    "name": "winner",
+                    "type": "Address"
+                },
+                {
+                    "name": "prize",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "balanceOf",
+            "inputs": [
+                {
+                    "name": "player",
+                    "type": "Address"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                }
+            ]
+        }
+    ],
+    "types": {}
+}

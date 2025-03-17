@@ -1,0 +1,323 @@
+{
+    "buildInfo": {
+        "rustc": {
+            "version": "1.76.0-nightly",
+            "commitHash": "d86d65bbc19b928387f68427fcc3a0da498d8a19",
+            "commitDate": "2023-12-10",
+            "channel": "Nightly",
+            "short": "rustc 1.76.0-nightly (d86d65bbc 2023-12-10)"
+        },
+        "contractCrate": {
+            "name": "vault",
+            "version": "0.0.0"
+        },
+        "framework": {
+            "name": "dharitri-sc",
+            "version": "0.47.0"
+        }
+    },
+    "docs": [
+        "General test contract.",
+        "Used especially for investigating async calls and contract interaction in general."
+    ],
+    "name": "Vault",
+    "constructor": {
+        "inputs": [
+            {
+                "name": "opt_arg_to_echo",
+                "type": "optional<bytes>",
+                "multi_arg": true
+            }
+        ],
+        "outputs": [
+            {
+                "type": "optional<bytes>",
+                "multi_result": true
+            }
+        ]
+    },
+    "endpoints": [
+        {
+            "name": "echo_arguments",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "variadic<bytes>",
+                    "multi_result": true
+                }
+            ]
+        },
+        {
+            "name": "echo_arguments_without_storage",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "variadic<bytes>",
+                    "multi_result": true
+                }
+            ]
+        },
+        {
+            "name": "echo_caller",
+            "mutability": "mutable",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "Address"
+                }
+            ]
+        },
+        {
+            "name": "accept_funds",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "name": "accept_funds_echo_payment",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "variadic<multi<TokenIdentifier,u64,BigUint>>",
+                    "multi_result": true
+                }
+            ]
+        },
+        {
+            "name": "accept_funds_single_dcdt_transfer",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "name": "reject_funds",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "name": "retrieve_funds_with_transfer_exec",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [
+                {
+                    "name": "token",
+                    "type": "TokenIdentifier"
+                },
+                {
+                    "name": "amount",
+                    "type": "BigUint"
+                },
+                {
+                    "name": "opt_receive_func",
+                    "type": "optional<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "retrieve_funds",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "token",
+                    "type": "RewaOrDcdtTokenIdentifier"
+                },
+                {
+                    "name": "nonce",
+                    "type": "u64"
+                },
+                {
+                    "name": "amount",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "retrieve_multi_funds_async",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "token_payments",
+                    "type": "variadic<multi<TokenIdentifier,u64,BigUint>>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "burn_and_create_retrive_async",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "name": "get_owner_address",
+            "mutability": "mutable",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "Address"
+                }
+            ]
+        },
+        {
+            "docs": [
+                "We already leave a trace of the calls using the event logs;",
+                "this additional counter has the role of showing that storage also gets saved correctly."
+            ],
+            "name": "call_counts",
+            "mutability": "readonly",
+            "inputs": [
+                {
+                    "name": "endpoint",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "u32"
+                }
+            ]
+        },
+        {
+            "name": "num_called_retrieve_funds_promises",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "u32"
+                }
+            ]
+        },
+        {
+            "name": "num_async_calls_sent_from_child",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "u32"
+                }
+            ]
+        },
+        {
+            "name": "upgrade",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "opt_arg_to_echo",
+                    "type": "optional<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "utf-8 string"
+                },
+                {
+                    "type": "optional<bytes>",
+                    "multi_result": true
+                }
+            ],
+            "labels": [
+                "upgrade"
+            ]
+        }
+    ],
+    "events": [
+        {
+            "identifier": "upgraded",
+            "inputs": []
+        },
+        {
+            "identifier": "accept_funds",
+            "inputs": [
+                {
+                    "name": "rewa_value",
+                    "type": "BigUint",
+                    "indexed": true
+                },
+                {
+                    "name": "multi_dcdt",
+                    "type": "variadic<multi<TokenIdentifier,u64,BigUint>>",
+                    "indexed": true
+                }
+            ]
+        },
+        {
+            "identifier": "reject_funds",
+            "inputs": [
+                {
+                    "name": "rewa_value",
+                    "type": "BigUint",
+                    "indexed": true
+                },
+                {
+                    "name": "multi_dcdt",
+                    "type": "variadic<multi<TokenIdentifier,u64,BigUint>>",
+                    "indexed": true
+                }
+            ]
+        },
+        {
+            "identifier": "retrieve_funds",
+            "inputs": [
+                {
+                    "name": "token",
+                    "type": "RewaOrDcdtTokenIdentifier",
+                    "indexed": true
+                },
+                {
+                    "name": "nonce",
+                    "type": "u64",
+                    "indexed": true
+                },
+                {
+                    "name": "amount",
+                    "type": "BigUint",
+                    "indexed": true
+                }
+            ]
+        }
+    ],
+    "dcdtAttributes": [],
+    "hasCallback": false,
+    "types": {}
+}

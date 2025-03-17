@@ -1,0 +1,163 @@
+{
+    "buildInfo": {
+        "rustc": {
+            "version": "1.84.1",
+            "commitHash": "e71f9a9a98b0faf423844bf0ba7438f29dc27d58",
+            "commitDate": "2025-01-27",
+            "channel": "Stable",
+            "short": "rustc 1.84.1 (e71f9a9a9 2025-01-27)"
+        },
+        "contractCrate": {
+            "name": "linked-list-repeat",
+            "version": "0.0.0"
+        },
+        "framework": {
+            "name": "dharitri-sc",
+            "version": "1.0.1"
+        }
+    },
+    "name": "LinkedListRepeat",
+    "constructor": {
+        "inputs": [],
+        "outputs": []
+    },
+    "endpoints": [
+        {
+            "name": "add",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "num_repeats",
+                    "type": "u32"
+                },
+                {
+                    "name": "value",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "count",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "value",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "u32"
+                }
+            ]
+        },
+        {
+            "name": "remove",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "num_repeats",
+                    "type": "u32"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "bench",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "variadic<bytes>",
+                    "multi_result": true
+                }
+            ]
+        },
+        {
+            "name": "add_struct",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "num_repeats",
+                    "type": "u32"
+                },
+                {
+                    "name": "value",
+                    "type": "ExampleStruct"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "count_struct",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "value",
+                    "type": "ExampleStruct"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "u32"
+                }
+            ]
+        },
+        {
+            "name": "remove_struct",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "num_repeats",
+                    "type": "u32"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "bench_struct",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "variadic<ExampleStruct>",
+                    "multi_result": true
+                }
+            ]
+        }
+    ],
+    "dcdtAttributes": [],
+    "hasCallback": false,
+    "types": {
+        "ExampleStruct": {
+            "type": "struct",
+            "fields": [
+                {
+                    "name": "first_token_id",
+                    "type": "TokenIdentifier"
+                },
+                {
+                    "name": "first_token_nonce",
+                    "type": "u64"
+                },
+                {
+                    "name": "first_token_amount",
+                    "type": "BigUint"
+                },
+                {
+                    "name": "second_token_id",
+                    "type": "TokenIdentifier"
+                },
+                {
+                    "name": "second_token_nonce",
+                    "type": "u64"
+                },
+                {
+                    "name": "second_token_amount",
+                    "type": "BigUint"
+                }
+            ]
+        }
+    }
+}

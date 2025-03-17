@@ -1,0 +1,232 @@
+{
+    "docs": [
+        "Contract that only tests the call value features,",
+        "i.e. the framework/Andes functionality for accepting REWA and DCDT payments."
+    ],
+    "name": "PayableFeatures",
+    "endpoints": [
+        {
+            "name": "check_call_value",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "TokenIdentifier"
+                },
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "TokenIdentifier"
+                }
+            ]
+        },
+        {
+            "name": "payable_any_1",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "TokenIdentifier"
+                }
+            ]
+        },
+        {
+            "name": "payable_any_2",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "TokenIdentifier"
+                }
+            ]
+        },
+        {
+            "name": "payable_any_3",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "TokenIdentifier"
+                }
+            ]
+        },
+        {
+            "name": "payable_any_4",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "TokenIdentifier"
+                }
+            ]
+        },
+        {
+            "docs": [
+                "Will issue a warning, but this is ok, this is the test."
+            ],
+            "name": "payable_rewa_0",
+            "payableInTokens": [
+                "REWA"
+            ],
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "TokenIdentifier"
+                }
+            ]
+        },
+        {
+            "name": "payable_rewa_1",
+            "payableInTokens": [
+                "REWA"
+            ],
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "TokenIdentifier"
+                }
+            ]
+        },
+        {
+            "name": "payable_rewa_2",
+            "payableInTokens": [
+                "REWA"
+            ],
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "TokenIdentifier"
+                }
+            ]
+        },
+        {
+            "name": "payable_rewa_3",
+            "payableInTokens": [
+                "REWA"
+            ],
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "TokenIdentifier"
+                }
+            ]
+        },
+        {
+            "name": "payable_rewa_4",
+            "payableInTokens": [
+                "REWA"
+            ],
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "TokenIdentifier"
+                }
+            ]
+        },
+        {
+            "name": "payable_token_1",
+            "payableInTokens": [
+                "PAYABLE-FEATURES-TOKEN"
+            ],
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "TokenIdentifier"
+                }
+            ]
+        },
+        {
+            "name": "payable_token_2",
+            "payableInTokens": [
+                "PAYABLE-FEATURES-TOKEN"
+            ],
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "TokenIdentifier"
+                }
+            ]
+        },
+        {
+            "name": "payable_token_3",
+            "payableInTokens": [
+                "PAYABLE-FEATURES-TOKEN"
+            ],
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "TokenIdentifier"
+                }
+            ]
+        },
+        {
+            "name": "payable_token_4",
+            "payableInTokens": [
+                "PAYABLE-FEATURES-TOKEN"
+            ],
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                },
+                {
+                    "type": "TokenIdentifier"
+                }
+            ]
+        }
+    ],
+    "types": {}
+}

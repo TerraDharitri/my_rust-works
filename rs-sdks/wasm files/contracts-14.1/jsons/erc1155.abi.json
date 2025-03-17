@@ -1,0 +1,240 @@
+{
+    "name": "Erc1155",
+    "endpoints": [
+        {
+            "docs": [
+                "`value` is amount for fungible, nft_id for non-fungible"
+            ],
+            "name": "safeTransferFrom",
+            "inputs": [
+                {
+                    "name": "from",
+                    "type": "Address"
+                },
+                {
+                    "name": "to",
+                    "type": "Address"
+                },
+                {
+                    "name": "type_id",
+                    "type": "BigUint"
+                },
+                {
+                    "name": "value",
+                    "type": "BigUint"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "docs": [
+                "`value` is amount for fungible, nft_id for non-fungible"
+            ],
+            "name": "safeBatchTransferFrom",
+            "inputs": [
+                {
+                    "name": "from",
+                    "type": "Address"
+                },
+                {
+                    "name": "to",
+                    "type": "Address"
+                },
+                {
+                    "name": "type_ids",
+                    "type": "List<BigUint>"
+                },
+                {
+                    "name": "values",
+                    "type": "List<BigUint>"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "setApprovalForAll",
+            "inputs": [
+                {
+                    "name": "operator",
+                    "type": "Address"
+                },
+                {
+                    "name": "approved",
+                    "type": "bool"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "createToken",
+            "inputs": [
+                {
+                    "name": "uri",
+                    "type": "bytes"
+                },
+                {
+                    "name": "initial_supply",
+                    "type": "BigUint"
+                },
+                {
+                    "name": "is_fungible",
+                    "type": "bool"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                }
+            ]
+        },
+        {
+            "name": "mint",
+            "inputs": [
+                {
+                    "name": "type_id",
+                    "type": "BigUint"
+                },
+                {
+                    "name": "amount",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "burn",
+            "inputs": [
+                {
+                    "name": "type_id",
+                    "type": "BigUint"
+                },
+                {
+                    "name": "amount",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "balanceOf",
+            "inputs": [
+                {
+                    "name": "owner",
+                    "type": "Address"
+                },
+                {
+                    "name": "type_id",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                }
+            ]
+        },
+        {
+            "name": "balanceOfBatch",
+            "inputs": [
+                {
+                    "name": "owner_type_id_pairs",
+                    "type": "variadic<multi2<Address,BigUint,>>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "variadic<BigUint>",
+                    "multi_result": true
+                }
+            ]
+        },
+        {
+            "name": "isApprovedForAll",
+            "inputs": [
+                {
+                    "name": "owner",
+                    "type": "Address"
+                },
+                {
+                    "name": "operator",
+                    "type": "Address"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "getTokenOwner",
+            "inputs": [
+                {
+                    "name": "type_id",
+                    "type": "BigUint"
+                },
+                {
+                    "name": "nft_id",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "Address"
+                }
+            ]
+        },
+        {
+            "name": "getTokenTypeCreator",
+            "inputs": [
+                {
+                    "name": "type_id",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "Address"
+                }
+            ]
+        },
+        {
+            "name": "getTokenTypeUri",
+            "inputs": [
+                {
+                    "name": "type_id",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "name": "isFungible",
+            "inputs": [
+                {
+                    "name": "type_id",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "bool"
+                }
+            ]
+        }
+    ],
+    "types": {}
+}

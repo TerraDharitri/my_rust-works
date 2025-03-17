@@ -1,0 +1,172 @@
+{
+    "docs": [
+        "A contract that allows anyone to send a fixed sum, locks it for a while and then allows users to take it back.",
+        "Sending funds to the contract is called \"ping\".",
+        "Taking the same funds back is called \"pong\".",
+        "",
+        "Restrictions:",
+        "- `ping` can be called only after the contract is activated. By default the contract is activated on deploy.",
+        "- Users can only `ping` once, ever.",
+        "- Only the set amount can be `ping`-ed, no more, no less.",
+        "- The contract can optionally have a maximum cap. No more users can `ping` after the cap has been reached.",
+        "- The `ping` endpoint optionally accepts",
+        "- `pong` can only be called after the contract expired (a certain duration has passed since activation).",
+        "- `pongAll` can be used to send to all users to `ping`-ed. If it runs low on gas, it will interrupt itself.",
+        "It can be continued anytime."
+    ],
+    "name": "PingPong",
+    "endpoints": [
+        {
+            "docs": [
+                "User sends some REWA to be locked in the contract for a period of time.",
+                "Optional `_data` argument is ignored."
+            ],
+            "name": "ping",
+            "payableInTokens": [
+                "REWA"
+            ],
+            "inputs": [
+                {
+                    "name": "_data",
+                    "type": "optional<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "docs": [
+                "User can take back funds from the contract.",
+                "Can only be called after expiration."
+            ],
+            "name": "pong",
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "docs": [
+                "Send back funds to all users who pinged.",
+                "Returns",
+                "- `completed` if everything finished",
+                "- `interrupted` if run out of gas midway.",
+                "Can only be called after expiration."
+            ],
+            "name": "pongAll",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "OperationCompletionStatus"
+                }
+            ]
+        },
+        {
+            "docs": [
+                "Lists the addresses of all users that have `ping`-ed,",
+                "in the order they have `ping`-ed"
+            ],
+            "name": "getUserAddresses",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "variadic<Address>",
+                    "multi_result": true
+                }
+            ]
+        },
+        {
+            "name": "getPingAmount",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                }
+            ]
+        },
+        {
+            "name": "getDeadline",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "u64"
+                }
+            ]
+        },
+        {
+            "docs": [
+                "Block timestamp of the block where the contract got activated.",
+                "If not specified in the constructor it is the the deploy block timestamp."
+            ],
+            "name": "getActivationTimestamp",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "u64"
+                }
+            ]
+        },
+        {
+            "docs": [
+                "Optional funding cap."
+            ],
+            "name": "getMaxFunds",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "Option<BigUint>"
+                }
+            ]
+        },
+        {
+            "docs": [
+                "State of user funds.",
+                "0 - user unknown, never `ping`-ed",
+                "1 - `ping`-ed",
+                "2 - `pong`-ed"
+            ],
+            "name": "getUserStatus",
+            "inputs": [
+                {
+                    "name": "user_id",
+                    "type": "u32"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "UserStatus"
+                }
+            ]
+        },
+        {
+            "docs": [
+                "Part of the `pongAll` status, the last user to be processed.",
+                "0 if never called `pongAll` or `pongAll` completed.."
+            ],
+            "name": "pongAllLastUser",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "u32"
+                }
+            ]
+        }
+    ],
+    "types": {
+        "UserStatus": {
+            "type": "enum",
+            "variants": [
+                {
+                    "name": "New",
+                    "discriminant": 0
+                },
+                {
+                    "name": "Registered",
+                    "discriminant": 1
+                },
+                {
+                    "name": "Withdrawn",
+                    "discriminant": 2
+                }
+            ]
+        }
+    }
+}

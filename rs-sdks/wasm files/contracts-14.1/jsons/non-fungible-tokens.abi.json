@@ -1,0 +1,133 @@
+{
+    "name": "NonFungibleTokens",
+    "endpoints": [
+        {
+            "docs": [
+                "Creates new tokens and sets their ownership to the specified account.",
+                "Only the contract owner may call this function."
+            ],
+            "name": "mint",
+            "inputs": [
+                {
+                    "name": "count",
+                    "type": "u64"
+                },
+                {
+                    "name": "new_token_owner",
+                    "type": "Address"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "docs": [
+                "Approves an account to transfer the token on behalf of its owner.<br>",
+                "Only the owner of the token may call this function."
+            ],
+            "name": "approve",
+            "inputs": [
+                {
+                    "name": "token_id",
+                    "type": "u64"
+                },
+                {
+                    "name": "approved_address",
+                    "type": "Address"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "docs": [
+                "Revokes approval for the token.<br>  ",
+                "Only the owner of the token may call this function."
+            ],
+            "name": "revoke",
+            "inputs": [
+                {
+                    "name": "token_id",
+                    "type": "u64"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "docs": [
+                "Transfer ownership of the token to a new account."
+            ],
+            "name": "transfer",
+            "inputs": [
+                {
+                    "name": "token_id",
+                    "type": "u64"
+                },
+                {
+                    "name": "to",
+                    "type": "Address"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "contractOwner",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "Address"
+                }
+            ]
+        },
+        {
+            "name": "totalMinted",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "u64"
+                }
+            ]
+        },
+        {
+            "name": "tokenOwner",
+            "inputs": [
+                {
+                    "name": "token_id",
+                    "type": "u64"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "Address"
+                }
+            ]
+        },
+        {
+            "name": "tokenCount",
+            "inputs": [
+                {
+                    "name": "owner",
+                    "type": "Address"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "u64"
+                }
+            ]
+        },
+        {
+            "name": "approval",
+            "inputs": [
+                {
+                    "name": "token_id",
+                    "type": "u64"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "Address"
+                }
+            ]
+        }
+    ],
+    "types": {}
+}

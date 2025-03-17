@@ -1,0 +1,11 @@
+[
+  "checkNoPayment",
+  "finish",
+  "getNumArguments",
+  "mBufferAppendBytes",
+  "mBufferFinish",
+  "mBufferGetArgument",
+  "mBufferSetBytes",
+  "managedWriteLog",
+  "signalError"
+]
