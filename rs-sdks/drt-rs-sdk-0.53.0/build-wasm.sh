@@ -14,7 +14,7 @@
 
 # builds all wasm targets
 
-# cargo install dharitri-sc-meta
+# cargo install dharitri-sc-meta   #teja789
 
 cargo install --path /home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.52.3/framework/meta
 
