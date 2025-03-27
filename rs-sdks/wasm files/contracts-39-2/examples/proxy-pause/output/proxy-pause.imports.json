@@ -1,0 +1,21 @@
+[
+  "signalError",
+  "mBufferNew",
+  "mBufferAppend",
+  "managedCaller",
+  "mBufferAppendBytes",
+  "managedSignalError",
+  "mBufferGetArgument",
+  "getNumArguments",
+  "mBufferGetLength",
+  "mBufferFinish",
+  "bigIntSetInt64",
+  "getGasLeft",
+  "managedExecuteOnDestContext",
+  "cleanReturnData",
+  "mBufferGetByteSlice",
+  "mBufferSetBytes",
+  "mBufferStorageLoad",
+  "mBufferStorageStore",
+  "checkNoPayment"
+]

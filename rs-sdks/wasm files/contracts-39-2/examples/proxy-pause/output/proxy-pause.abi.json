@@ -1,0 +1,111 @@
+{
+    "buildInfo": {
+        "rustc": {
+            "version": "1.67.0-nightly",
+            "commitHash": "01fbc5ae789fc0c7a2da71d3cd908451f175e4eb",
+            "commitDate": "2022-12-07",
+            "channel": "Nightly",
+            "short": "rustc 1.67.0-nightly (01fbc5ae7 2022-12-07)"
+        },
+        "contractCrate": {
+            "name": "proxy-pause",
+            "version": "0.0.0"
+        },
+        "framework": {
+            "name": "dharitri-sc",
+            "version": "1.0.2"
+        }
+    },
+    "name": "PauseProxy",
+    "constructor": {
+        "inputs": [],
+        "outputs": []
+    },
+    "endpoints": [
+        {
+            "name": "addContracts",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "contracts",
+                    "type": "variadic<Address>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "removeContracts",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "contracts",
+                    "type": "variadic<Address>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "addOwners",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "owners",
+                    "type": "variadic<Address>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "removeOwners",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "owners",
+                    "type": "variadic<Address>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "pause",
+            "mutability": "mutable",
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "name": "unpause",
+            "mutability": "mutable",
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "name": "owners",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "variadic<Address>",
+                    "multi_result": true
+                }
+            ]
+        },
+        {
+            "name": "contracts",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "variadic<Address>",
+                    "multi_result": true
+                }
+            ]
+        }
+    ],
+    "events": [],
+    "hasCallback": false,
+    "types": {}
+}

@@ -1,0 +1,58 @@
+{
+    "buildInfo": {
+        "rustc": {
+            "version": "1.67.0-nightly",
+            "commitHash": "01fbc5ae789fc0c7a2da71d3cd908451f175e4eb",
+            "commitDate": "2022-12-07",
+            "channel": "Nightly",
+            "short": "rustc 1.67.0-nightly (01fbc5ae7 2022-12-07)"
+        },
+        "contractCrate": {
+            "name": "transfer-role-features",
+            "version": "0.0.0"
+        },
+        "framework": {
+            "name": "dharitri-sc",
+            "version": "1.0.2"
+        }
+    },
+    "name": "TransferRoleFeatures",
+    "constructor": {
+        "inputs": [
+            {
+                "name": "whitelist",
+                "type": "variadic<Address>",
+                "multi_arg": true
+            }
+        ],
+        "outputs": []
+    },
+    "endpoints": [
+        {
+            "name": "forwardPayments",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [
+                {
+                    "name": "dest",
+                    "type": "Address"
+                },
+                {
+                    "name": "endpoint_name",
+                    "type": "bytes"
+                },
+                {
+                    "name": "args",
+                    "type": "variadic<bytes>",
+                    "multi_arg": true
+                }
+            ],
+            "outputs": []
+        }
+    ],
+    "events": [],
+    "hasCallback": true,
+    "types": {}
+}
