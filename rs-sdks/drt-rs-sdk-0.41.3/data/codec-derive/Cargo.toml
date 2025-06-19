@@ -1,6 +1,6 @@
 [package]
 name = "dharitri-sc-codec-derive"
-version = "0.17.2"
+version = "1.2.6"
 edition = "2021"
 
 authors = ["contact@dharitri.org"]

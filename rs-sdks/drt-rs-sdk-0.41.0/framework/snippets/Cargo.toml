@@ -1,6 +1,6 @@
 [package]
 name = "dharitri-sc-snippets"
-version = "0.0.12"
+version = "1.2.0"
 edition = "2021"
 
 authors = ["contact@dharitri.org"]
@@ -25,10 +25,10 @@ litemap = "0.1.1"
 url = "=2.2.0"
 
 [dependencies.dharitri-sc-scenario]
-version = "=0.0.12"
+version = "=1.2.0"
 path = "../scenario"
 
 [dependencies.dharitri-sdk]
-version = "=0.0.12"
+version = "=1.2.0"
 path = "../../sdk/core"
 

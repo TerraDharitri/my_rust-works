@@ -12,10 +12,10 @@ path = "src/promises_main.rs"
 path = "../vault"
 
 [dependencies.dharitri-sc]
-version = "0.43.3"
+version = "1.4.6"
 path = "../../../../framework/base"
 features = ["promises"]
 
 [dev-dependencies.dharitri-sc-scenario]
-version = "0.43.3"
+version = "1.4.6"
 path = "../../../../framework/scenario"

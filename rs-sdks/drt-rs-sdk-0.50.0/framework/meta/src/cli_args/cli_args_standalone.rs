@@ -306,7 +306,7 @@ pub enum InstallCommand {
     All,
 
     #[command(about = "Installs the `drt-go-scenario` tool")]
-    DrtScenarioGo(InstallDrtScenarioGoArgs),
+    DrtGoScenario(InstallDrtGoScenarioArgs),
 
     #[command(name = "wasm32", about = "Installs the `wasm32` target")]
     Wasm32(InstallWasm32Args),
@@ -316,7 +316,7 @@ pub enum InstallCommand {
 }
 
 #[derive(Default, Clone, PartialEq, Eq, Debug, Args)]
-pub struct InstallDrtScenarioGoArgs {
+pub struct InstallDrtGoScenarioArgs {
     /// The framework version on which the contracts should be created.
     #[arg(long, verbatim_doc_comment)]
     pub tag: Option<String>,
