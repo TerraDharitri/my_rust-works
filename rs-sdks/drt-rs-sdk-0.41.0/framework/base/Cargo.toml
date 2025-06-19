@@ -1,6 +1,6 @@
 [package]
 name = "dharitri-sc"
-version = "0.41.0"
+version = "0.0.12"
 edition = "2021"
 
 authors = ["contact@dharitri.org"]
@@ -25,16 +25,17 @@ dcdt-token-payment-legacy-decode = []
 hashbrown = "0.13.2"
 hex-literal = "0.3.1"
 bitflags = "1.3.2"
+ahash = "=0.8.4"
 
 [dependencies.num-traits]
 version = "0.2"
 default-features = false
 
 [dependencies.dharitri-sc-derive]
-version = "=0.41.0"
+version = "=0.0.12"
 path = "../derive"
 
 [dependencies.dharitri-sc-codec]
-version = "=0.17.1"
+version = "=0.0.12"
 path = "../../data/codec"
 features = ["derive"]

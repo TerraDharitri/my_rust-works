@@ -159,4 +159,3 @@ members = [
   "contracts/feature-tests/use-module",
   "contracts/feature-tests/use-module/meta",
 ]
-

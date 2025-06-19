@@ -26,13 +26,13 @@ They are:
 - `dharitri-chain-scenario-format`, in short `scenario-format`, scenario JSON serializer/deserializer, 1 crate.
 - `dharitri-sdk`, in short `sdk`, allows communication with the chain(s), 1 crate.
 
-## [sc 1.0.2, vm 1.0.2] - 2023-01-19
+## [sc 1.0.8, vm 1.0.8] - 2023-01-19
 - `dharitri-sc-meta` improvements:
 	- `all` command that allows calling all contract meta crates in a folder;
 	- `upgrade` also re-generates wasm crates after reaching 0.39.1.
 - Cleaned up dependencies.
 
-## [sc 0.39.1, codec 1.0.2, vm 1.0.2, scenario-format 1.0.2, sdk 1.0.2] - 2023-01-18
+## [sc 0.39.1, codec 1.0.8, vm 1.0.8, scenario-format 1.0.8, sdk 1.0.8] - 2023-01-18
 - `dharitri-sc-meta` can be installed as a standalone tool (`sc-meta`), and used to automatically upgrade contracts.
 - Many depedencies updates across the repo.
 - Updated readme files.
@@ -343,7 +343,7 @@ They are:
 - Improved preprocessor substitutions: hidden generics for most managed types
 - Build info in ABI - rustc version, framework version, crate version
 
-## [numbat-wasm 1.0.2] - 2021-09-17
+## [numbat-wasm 1.0.8] - 2021-09-17
 - Legacy Send API implementation fix
 
 ## [numbat-wasm 0.19.0, numbat-codec 0.6.0, denali 0.9.0] - 2021-09-10
@@ -402,7 +402,7 @@ They are:
 ## [numbat-wasm 0.17.2] - 2021-06-04
 - callbacks can now declared in modules only (manual forwarding from the main contract no longer required)
 
-## [numbat-wasm 1.0.2] - 2021-06-04
+## [numbat-wasm 1.0.8] - 2021-06-04
 - `legacy-nft-transfer` feature for interacting with older versions of Andes
 
 ## [numbat-wasm 0.17.0] - 2021-05-28
@@ -614,7 +614,7 @@ They are:
 - Specialized small int top encoding/decoding
 - `only_owner!` macro
 
-## [numbat-wasm 0.6.0, numbat-codec 1.0.2] - 2020-08-25
+## [numbat-wasm 0.6.0, numbat-codec 1.0.8] - 2020-08-25
 - Redesigned the entire build process with wasm crates
 - Standard modules
 - Moved all example contracts from sc-examples-rs to the framework
@@ -623,7 +623,7 @@ They are:
 - H256 now boxed
 - SCResult is_ok, is_err
 
-## [numbat-wasm 0.5.4, numbat-codec 1.0.2] - 2020-07-18
+## [numbat-wasm 0.5.4, numbat-codec 1.0.8] - 2020-07-18
 - MultiResultVec - new, from_iter
 - EncodeError type
 
@@ -696,7 +696,7 @@ They are:
 - BigUint trait created, added operators (including bitwise)
 - BigUint used for balances
 
-## [numbat-wasm 1.0.2] - 2020-02-27
+## [numbat-wasm 1.0.8] - 2020-02-27
 - Async call contract proxy infrastructure
 
 ## [numbat-wasm 0.1.0] - 2020-02-05 

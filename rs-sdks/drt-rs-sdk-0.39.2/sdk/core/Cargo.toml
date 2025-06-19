@@ -1,6 +1,6 @@
 [package]
 name = "dharitri-sdk"
-version = "1.0.2"
+version = "1.0.8"
 edition = "2021"
 
 authors = ["contact@dharitri.org"]
@@ -14,10 +14,10 @@ categories = ["cryptography::cryptocurrencies", "api-bindings"]
 keywords = ["dharitri", "blockchain", "sdk", "api"]
 
 [dependencies]
-tokio = { version = "1.24", features = ["full"] }
-reqwest = { version = "0.11.4", features = ["blocking", "json"] }
-serde = { version = "1.0.130", features = ["derive"] }
-serde_json = { version = "1.0.68", features = ["preserve_order"] }
+tokio = { version = "=1.24.2", features = ["full"] }
+reqwest = { version = "=0.11.4", features = ["blocking", "json"] }
+serde = { version = "=1.0.130", features = ["derive"] }
+serde_json = { version = "=1.0.68", features = ["preserve_order"] }
 serde_repr = "0.1.7"
 anyhow = "1.0.44"
 rand = "0.6.0"
@@ -33,3 +33,6 @@ zeroize = "1.4.2"
 bech32 = "0.9"
 itertools = "0.10.1"
 pem = "1.0.1"
+url = "=2.2.0"
+native-tls = "=0.2.7"
+
