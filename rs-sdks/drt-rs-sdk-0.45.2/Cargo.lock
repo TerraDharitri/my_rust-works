@@ -759,7 +759,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-chain-scenario-format"
-version = "0.21.1"
+version = "1.6.4"
 dependencies = [
  "bech32",
  "hex",
@@ -772,7 +772,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-chain-vm"
-version = "0.7.1"
+version = "1.6.4"
 dependencies = [
  "bitflags",
  "dharitri-vm-executor",
@@ -790,7 +790,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc"
-version = "0.45.2"
+version = "1.6.4"
 dependencies = [
  "bitflags",
  "dharitri-sc-codec",
@@ -802,7 +802,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-codec"
-version = "0.18.3"
+version = "1.6.4"
 dependencies = [
  "arrayvec",
  "dharitri-sc-codec-derive",
@@ -811,7 +811,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-codec-derive"
-version = "0.18.3"
+version = "1.6.4"
 dependencies = [
  "hex",
  "proc-macro2",
@@ -821,7 +821,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-derive"
-version = "0.45.2"
+version = "1.6.4"
 dependencies = [
  "hex",
  "proc-macro2",
@@ -832,7 +832,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-meta"
-version = "0.45.2"
+version = "1.6.4"
 dependencies = [
  "clap",
  "colored",
@@ -857,14 +857,14 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-modules"
-version = "0.45.2"
+version = "1.6.4"
 dependencies = [
  "dharitri-sc",
 ]
 
 [[package]]
 name = "dharitri-sc-price-aggregator"
-version = "0.45.2"
+version = "1.6.4"
 dependencies = [
  "arrayvec",
  "dharitri-sc",
@@ -885,7 +885,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-scenario"
-version = "0.45.2"
+version = "1.6.4"
 dependencies = [
  "base64 0.21.7",
  "bech32",
@@ -911,7 +911,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-snippets"
-version = "0.45.2"
+version = "1.6.4"
 dependencies = [
  "base64 0.21.7",
  "dharitri-sc-scenario",
@@ -925,14 +925,14 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-wasm-adapter"
-version = "0.45.2"
+version = "1.6.4"
 dependencies = [
  "dharitri-sc",
 ]
 
 [[package]]
 name = "dharitri-sc-wrewa-swap"
-version = "0.45.2"
+version = "1.6.4"
 dependencies = [
  "dharitri-sc",
  "dharitri-sc-modules",
@@ -950,7 +950,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sdk"
-version = "0.3.1"
+version = "1.6.4"
 dependencies = [
  "anyhow",
  "base64 0.21.7",

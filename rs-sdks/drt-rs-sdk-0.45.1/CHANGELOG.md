@@ -26,11 +26,11 @@ They are:
 - `dharitri-chain-scenario-format`, in short `scenario-format`, scenario JSON serializer/deserializer, 1 crate.
 - `dharitri-sdk`, in short `sdk`, allows communication with the chain(s), 1 crate.
 
-## [sc 0.45.1, codec 0.18.2] - 2023-11-24
+## [sc 1.6.2, codec 1.6.2] - 2023-11-24
 - Fixed sc-meta standalone install backwards compatibility.
 - Better hygiene in codec derive.
 
-## [sc 0.45.0, vm 0.7.0, scenario-format 0.21.0, sdk 0.3.0] - 2023-11-24
+## [sc 0.45.0, vm 1.6.2, scenario-format 1.6.2, sdk 1.6.2] - 2023-11-24
 - Replicated VM 1.5 in the Rust VM. This includes support for:
 	- promises,
 	- back-transfers,
@@ -140,7 +140,7 @@ They are:
 ## [sc 0.41.1, vm 0.3.1] - 2023-05-15
 - Fixed an edge case for the token storage mappers (`FungibleTokenMapper`, `NonFungibleTokenMapper`).
 
-## [sc 0.41.0, vm 0.3.0] - 2023-05-05
+## [sc 0.41.0, vm 1.6.2] - 2023-05-05
 - Fixed compatibility with rustc v1.71.0.
 - Allocator system:
 	- Contracts can now choose their own allocator. This works in multi-contract contexts.
@@ -486,7 +486,7 @@ They are:
 - Debugger builtin function mocks check for DCDT roles
 - ABI provides definitions for DcdtTokenPayment, DcdtTokenData, DcdtTokenType
 
-## [numbat-wasm 0.21.0, numbat-codec 0.8.0, denali 0.11.0] - 2021-10-22
+## [numbat-wasm 1.6.2, numbat-codec 0.8.0, denali 0.11.0] - 2021-10-22
 - Denali support for NFT syntax. Many more small improvements and some major refactoring.
 - Major refactoring of the `numbat-wasm-debug` crate, which enables the debugger and the coverage tool. Many features added:
 	- support for synchronous calls, also nested synchronous calls
@@ -503,7 +503,7 @@ They are:
 - Added missing managed methods in blockchain API: `is_smart_contract`, `get_shard_of_address`, `get_balance`.
 - Improved preprocessor substitutions: `ManagedAddress`, `TokenIdentifier`.
 
-## [numbat-wasm 0.20.0, numbat-codec 0.7.0, denali 0.10.0] - 2021-10-02
+## [numbat-wasm 0.20.0, numbat-codec 1.6.2, denali 0.10.0] - 2021-10-02
 - Managed callback handling
 - Managed async call result
 - ManagedVec improvements, deserialization fix
@@ -542,7 +542,7 @@ They are:
 	- Support for DCDT multi-transfer.
 
 
-## [numbat-wasm 0.18.2] - 2021-08-20
+## [numbat-wasm 1.6.2] - 2021-08-20
 - Crypto API: `ripemd160` function, custom secp256k1 signature verification (`verify_custom_secp256k1`) and signature generation (`encode_secp256k1_der_signature`).
 
 ## [numbat-wasm 0.18.1] - 2021-08-05
@@ -589,7 +589,7 @@ They are:
 ## [numbat-wasm 0.16.1, denali 0.7.1] - 2021-05-18
 - Improvements in denali-rs: username, contract owner, nested async calls
 
-## [numbat-wasm 0.16.0, denali 0.7.0, numbat-codec 0.5.3] - 2021-05-14
+## [numbat-wasm 0.16.0, denali 1.6.2, numbat-codec 0.5.3] - 2021-05-14
 ### Major redesign of important framework components:
 - The arguments to contract/module/proxy annotations are gone. All items are generated in the same Rust module. Both submodule inclusion and contract calls are now Rust-module-aware.
 - Submodule imports are now expressed as supertraits instead of the module getter annotated methods. Note: explicitly specifying the Rust module is required, in order for the framework to fetch generated types and functions from that module.
@@ -726,7 +726,7 @@ They are:
 ## [numbat-wasm 0.9.8, numbat-codec 0.3.2, denali 0.3.1] - 2020-11-23
 - SC deploy API
 
-## [numbat-wasm 0.9.7, numbat-codec 0.3.1, denali 0.3.0] - 2020-11-11
+## [numbat-wasm 0.9.7, numbat-codec 0.3.1, denali 1.6.2] - 2020-11-11
 - Monomorphization via codec trait instead of TypeInfo for arguments and storage
 - Reorganized all contracts in the `contracts` folder
 
@@ -751,7 +751,7 @@ They are:
 ## [numbat-wasm 0.9.1] - 2020-11-05
 - BigUint serialization bugfix
 
-## [numbat-wasm 0.9.0, numbat-codec 0.3.0, denali 0.2.0] - 2020-11-04
+## [numbat-wasm 0.9.0, numbat-codec 1.6.2, denali 0.2.0] - 2020-11-04
 - Serialization completely refactored to use "fast exit" methods
 - Storage/argument/result traits completely redesigned, simplified and optimized
 - Completely ditched the approach from numbat-wasm 0.8.0.
@@ -769,7 +769,7 @@ They are:
 - Avoid function selector infinite loop
 - Crowdfunding contract initial commit
 
-## [numbat-wasm 0.7.0, denali 0.1.0] - 2020-10-06
+## [numbat-wasm 1.6.2, denali 0.1.0] - 2020-10-06
 - Code coverage now possible
 - Denali in Rust
 - Modules properly integrated in the build process
@@ -854,7 +854,7 @@ They are:
 ## [numbat-wasm 0.3.2] - 2020-04-13
 - Fixes in the macro-based argument handling
 
-## [numbat-wasm 0.3.0] - 2020-04-03
+## [numbat-wasm 1.6.2] - 2020-04-03
 - Raw callback support
 - `storage_load_len` hook
 - Multi args

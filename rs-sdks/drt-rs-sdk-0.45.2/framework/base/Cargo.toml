@@ -1,6 +1,6 @@
 [package]
 name = "dharitri-sc"
-version = "0.45.2"
+version = "1.6.4"
 edition = "2021"
 
 authors = ["contact@dharitri.org"]
@@ -31,10 +31,10 @@ bitflags = "2.4.1"
 num-traits = { version = "0.2", default-features = false }
 
 [dependencies.dharitri-sc-derive]
-version = "=0.45.2"
+version = "=1.6.4"
 path = "../derive"
 
 [dependencies.dharitri-sc-codec]
-version = "=0.18.3"
+version = "=1.6.4"
 path = "../../data/codec"
 features = ["derive"]
