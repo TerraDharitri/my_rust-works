@@ -649,9 +649,9 @@ dependencies = [
 
 [[package]]
 name = "curve25519-dalek"
-version = "4.1.1"
+version = "4.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e89b8c6a2e4b1f45971ad09761aafb85514a84744b67a95e32c3cc1352d1f65c"
+checksum = "622178105f911d937a42cdb140730ba4a3ed2becd8ae6ce39c7d28b5d75d4588"
 dependencies = [
  "cfg-if",
  "cpufeatures",
@@ -729,7 +729,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-chain-scenario-format"
-version = "0.22.0"
+version = "1.8.0"
 dependencies = [
  "bech32",
  "hex",
@@ -742,9 +742,11 @@ dependencies = [
 
 [[package]]
 name = "dharitri-chain-vm"
-version = "0.8.0"
+version = "1.8.0"
 dependencies = [
+ "base64ct",
  "bitflags 2.4.1",
+ "curve25519-dalek",
  "dharitri-vm-executor",
  "ed25519-dalek",
  "hex",
@@ -760,7 +762,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc"
-version = "0.47.0"
+version = "1.8.0"
 dependencies = [
  "bitflags 2.4.1",
  "dharitri-sc-codec",
@@ -771,7 +773,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-codec"
-version = "0.18.4"
+version = "1.8.0"
 dependencies = [
  "arrayvec",
  "dharitri-sc-codec-derive",
@@ -780,7 +782,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-codec-derive"
-version = "0.18.4"
+version = "1.8.0"
 dependencies = [
  "hex",
  "proc-macro2",
@@ -790,7 +792,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-derive"
-version = "0.47.0"
+version = "1.8.0"
 dependencies = [
  "hex",
  "proc-macro2",
@@ -801,7 +803,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-meta"
-version = "0.47.0"
+version = "1.8.0"
 dependencies = [
  "clap",
  "colored",
@@ -827,14 +829,14 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-modules"
-version = "0.47.0"
+version = "1.8.0"
 dependencies = [
  "dharitri-sc",
 ]
 
 [[package]]
 name = "dharitri-sc-price-aggregator"
-version = "0.47.0"
+version = "1.8.0"
 dependencies = [
  "arrayvec",
  "dharitri-sc",
@@ -855,7 +857,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-scenario"
-version = "0.47.0"
+version = "1.8.0"
 dependencies = [
  "base64",
  "bech32",
@@ -881,7 +883,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-snippets"
-version = "0.47.0"
+version = "1.8.0"
 dependencies = [
  "base64",
  "dharitri-sc-scenario",
@@ -895,14 +897,14 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-wasm-adapter"
-version = "0.47.0"
+version = "1.8.0"
 dependencies = [
  "dharitri-sc",
 ]
 
 [[package]]
 name = "dharitri-sc-wrewa-swap"
-version = "0.47.0"
+version = "1.8.0"
 dependencies = [
  "dharitri-sc",
  "dharitri-sc-modules",
@@ -920,7 +922,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sdk"
-version = "0.3.1"
+version = "1.8.0"
 dependencies = [
  "anyhow",
  "base64",

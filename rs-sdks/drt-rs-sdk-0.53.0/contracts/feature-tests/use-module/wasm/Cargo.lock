@@ -22,7 +22,7 @@ checksum = "b048fb63fd8b5923fc5aa7b340d8e156aec7ec02f0c78fa8a6ddc2613f6f71de"
 
 [[package]]
 name = "dharitri-sc"
-version = "0.53.0"
+version = "1.14.0"
 dependencies = [
  "bitflags",
  "dharitri-sc-codec",
@@ -53,7 +53,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-derive"
-version = "0.53.0"
+version = "1.14.0"
 dependencies = [
  "hex",
  "proc-macro2",
@@ -64,14 +64,14 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-modules"
-version = "0.53.0"
+version = "1.14.0"
 dependencies = [
  "dharitri-sc",
 ]
 
 [[package]]
 name = "dharitri-sc-wasm-adapter"
-version = "0.53.0"
+version = "1.14.0"
 dependencies = [
  "dharitri-sc",
 ]

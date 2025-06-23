@@ -26,7 +26,7 @@ They are:
 - `dharitri-chain-scenario-format`, in short `scenario-format`, scenario JSON serializer/deserializer, 1 crate.
 - `dharitri-sdk`, in short `sdk`, allows communication with the chain(s), 1 crate.
 
-## [sc 0.48.0] - 2024-04-09
+## [sc 1.9.0] - 2024-04-09
 - When serializing to a managed buffer, static buffer caching is disabled by default.
 - `sc-meta:` - installers for wasm32 target and wasm-opt.
 - Integrated traits for token management: `FixedSupplyToken`, `Mergeable`.

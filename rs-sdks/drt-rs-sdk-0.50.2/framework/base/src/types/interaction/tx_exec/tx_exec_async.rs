@@ -158,7 +158,7 @@ where
 {
     /// Backwards compatibility only.
     #[deprecated(
-        since = "0.50.2",
+        since = "1.11.4",
         note = "Backwards compatibility only, does nothing. Just delete. Use `async_call_and_exit` to launch asynchronous calls."
     )]
     #[inline]

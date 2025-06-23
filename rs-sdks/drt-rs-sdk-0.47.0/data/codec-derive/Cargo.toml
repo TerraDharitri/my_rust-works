@@ -1,6 +1,6 @@
 [package]
 name = "dharitri-sc-codec-derive"
-version = "0.18.4"
+version = "1.8.3"
 edition = "2021"
 
 authors = ["contact@dharitri.org"]
@@ -21,7 +21,7 @@ proc-macro = true
 default = ["syn/full", "syn/parsing", "syn/extra-traits"]
 
 [dependencies]
-proc-macro2 = "=1.0.76"
-quote = "=1.0.35"
-syn = "=2.0.48"
-hex = "=0.4.3"
+proc-macro2 = "1.0.76"
+quote = "1.0.35"
+syn = "2.0.48"
+hex = "0.4.3"

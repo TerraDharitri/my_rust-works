@@ -12,10 +12,10 @@ path = "src/forwarder_legacy_main.rs"
 path = "../vault"
 
 [dependencies.dharitri-sc]
-version = "0.50.5"
+version = "1.11.10"
 path = "../../../../framework/base"
 
 [dev-dependencies.dharitri-sc-scenario]
-version = "0.50.5"
+version = "1.11.10"
 path = "../../../../framework/scenario"
 

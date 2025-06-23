@@ -75,10 +75,10 @@ path = "src/{SNIPPETS_SOURCE_FILE_NAME}"
 path = ".."
 
 [dependencies.dharitri-sc-snippets]
-version = "0.50.3"
+version = "1.11.6"
 
 [dependencies.dharitri-sc]
-version = "0.50.3"
+version = "1.11.6"
 
 [dependencies]
 clap = {{ version = "4.4.7", features = ["derive"] }}

@@ -34,7 +34,7 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "dharitri-sc"
-version = "0.47.0"
+version = "1.8.0"
 dependencies = [
  "bitflags",
  "dharitri-sc-codec",
@@ -63,7 +63,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-derive"
-version = "0.47.0"
+version = "1.8.0"
 dependencies = [
  "hex",
  "proc-macro2",
@@ -74,14 +74,14 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-modules"
-version = "0.47.0"
+version = "1.8.0"
 dependencies = [
  "dharitri-sc",
 ]
 
 [[package]]
 name = "dharitri-sc-price-aggregator"
-version = "0.47.0"
+version = "1.8.0"
 dependencies = [
  "arrayvec",
  "dharitri-sc",
@@ -100,7 +100,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-wasm-adapter"
-version = "0.47.0"
+version = "1.8.0"
 dependencies = [
  "dharitri-sc",
 ]

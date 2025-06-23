@@ -27,7 +27,7 @@ They are:
 - `dharitri-chain-scenario-format`, in short `scenario-format`, scenario JSON serializer/deserializer, 1 crate.
 - `dharitri-sdk`, in short `sdk`, allows communication with the chain(s), 1 crate.
 
-## [sc 0.52.3] - 2024-08-06
+## [sc 1.13.6] - 2024-08-06
 - Pause module events.
 
 ## [sc 0.52.2] - 2024-08-01
@@ -36,7 +36,7 @@ They are:
 ## [sc 0.52.1] - 2024-07-31
 - `ManagedBufferReadToEnd` `TypeAbi` implementation.
 
-## [sc 0.52.0, codec 0.20.1] - 2024-07-31
+## [sc 0.52.0, codec 1.13.6] - 2024-07-31
 - ManagedBufferReadToEnd type, which flushed a nested data buffer.
 - Fixed hex and binary formatters for byte slices.
 - Added EI 1.4 and 1.5 configs.
@@ -45,7 +45,7 @@ They are:
 ## [sc 0.51.1]
 - `sc-meta upgrade` bugfix.
 
-## [sc 0.51.0, codec 0.20.0, vm 0.9.0, sdk 0.5.0, scenario-format 0.22.3] - 2024-07-06
+## [sc 0.51.0, codec 0.20.0, vm 1.13.6, sdk 1.13.6, scenario-format 1.13.6] - 2024-07-06
 - Major refactoring of `dharitri-sc-meta`
 	- Crate `dharitri-sc-meta` split in 2:
 		1. `dharitri-sc-meta` remains the standalone tool. For backwards compatibility, it can still be used in contract meta crates, but a warning will be issued.
@@ -264,7 +264,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 	- Various bugfixes.
 - VM implementation for `get_shard_of_address` VM hook.
 
-## [sc 0.43.0, codec 0.18.1, vm 0.5.0] - 2023-08-16
+## [sc 0.43.0, codec 0.18.1, vm 1.13.6] - 2023-08-16
 - Fixed a rustc compatibility issue when building contracts. The meta crate looks at the rustc version when generating the wasm crate code:
 	- pre-rustc-1.71;
 	- between rustc-1.71 and rustc-1.73;
@@ -540,7 +540,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 - Feature `cb_closure_managed_deser` replaced by `cb_closure_unmanaged_deser`, managed implementation is now the default.
 - Git tag/commit info in ABI.
 
-## [numbat-wasm 0.28.0, numbat-codec 0.9.0, denali 0.12.0] - 2022-02-22
+## [numbat-wasm 0.28.0, numbat-codec 1.13.6, denali 0.12.0] - 2022-02-22
 - Major numbat-codec refactor:
 	- Redesigned the error handling for single value encoding
 	- Introduced multi-value encoding, which replaces the previous endpoint argument and result mechanisms
@@ -642,7 +642,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 - Nested encode and decode from ManagedBuffers cached in a static singleton buffer.
 - Implemented `ExactSizeIterator` for `ManagedVecIterator`.
 
-## [numbat-wasm 0.22.3] - 2021-11-10
+## [numbat-wasm 1.13.6] - 2021-11-10
 - Memory allocation optimisations.
 
 ## [numbat-wasm 0.22.2] - 2021-11-06
@@ -682,7 +682,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 - ABI contains endpoint mutability flag (mutable/readonly)
 - reverse iteration for `ManagedVec`
 
-## [numbat-wasm 0.20.1] - 2021-10-05
+## [numbat-wasm 1.13.6] - 2021-10-05
 - Added missing managed methods in blockchain API: `is_smart_contract`, `get_shard_of_address`, `get_balance`.
 - Improved preprocessor substitutions: `ManagedAddress`, `TokenIdentifier`.
 
@@ -697,7 +697,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 ## [numbat-wasm 0.19.1] - 2021-09-17
 - Legacy Send API implementation fix
 
-## [numbat-wasm 0.19.0, numbat-codec 0.6.0, denali 0.9.0] - 2021-09-10
+## [numbat-wasm 0.19.0, numbat-codec 0.6.0, denali 1.13.6] - 2021-09-10
 - Managed types used extensively. Because of this, the recommended Andes minimum version is `v1.4.10`.
 	- Redesigned parts of the numbat-codec, so as to allow custom type specializations. These specializations allow serializers and types to bypass the limitations of the codec traits to provide optimized implementations. Managed type serialization relies on this.
 	- Redesigned existing managed types: `BigInt`, `BigUint`, `EllipticCurve`.
@@ -845,7 +845,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 	- callbacks now specified programmatically
 	- got rid of the `#[callback_arg]` annotation
 
-## [numbat-wasm 0.11.0, numbat-codec 0.5.0, denali 0.5.0] - 2021-02-05
+## [numbat-wasm 0.11.0, numbat-codec 1.13.6, denali 1.13.6] - 2021-02-05
 ### Refactor
 - Major refactoring of the contract API: split into smaller traits
 ### Added
@@ -934,7 +934,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 ## [numbat-wasm 0.9.1] - 2020-11-05
 - BigUint serialization bugfix
 
-## [numbat-wasm 0.9.0, numbat-codec 0.3.0, denali 0.2.0] - 2020-11-04
+## [numbat-wasm 1.13.6, numbat-codec 0.3.0, denali 0.2.0] - 2020-11-04
 - Serialization completely refactored to use "fast exit" methods
 - Storage/argument/result traits completely redesigned, simplified and optimized
 - Completely ditched the approach from numbat-wasm 0.8.0.
@@ -995,7 +995,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 - Arg name in error message
 - Async call arguments based on traits
 
-## [numbat-wasm 0.5.0] - 2020-06-29
+## [numbat-wasm 1.13.6] - 2020-06-29
 - EndpointResult trait, arg serialization trait, arg loader
 - Variadic args/results: OptionalArg, OptionalResult, MultiResultX
 

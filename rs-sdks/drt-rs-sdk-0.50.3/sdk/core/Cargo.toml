@@ -1,6 +1,6 @@
 [package]
 name = "dharitri-sdk"
-version = "0.4.1"
+version = "1.11.6"
 edition = "2021"
 
 authors = ["contact@dharitri.org"]

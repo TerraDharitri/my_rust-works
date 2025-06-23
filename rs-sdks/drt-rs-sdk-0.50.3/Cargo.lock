@@ -740,7 +740,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-chain-scenario-format"
-version = "0.22.2"
+version = "1.11.6"
 dependencies = [
  "bech32",
  "hex",
@@ -753,7 +753,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-chain-vm"
-version = "0.8.4"
+version = "1.11.6"
 dependencies = [
  "bitflags",
  "colored",
@@ -772,7 +772,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc"
-version = "0.50.3"
+version = "1.11.6"
 dependencies = [
  "bitflags",
  "dharitri-sc-codec",
@@ -784,7 +784,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-codec"
-version = "0.19.0"
+version = "1.11.6"
 dependencies = [
  "arrayvec",
  "dharitri-sc-codec-derive",
@@ -794,7 +794,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-codec-derive"
-version = "0.19.0"
+version = "1.11.6"
 dependencies = [
  "hex",
  "proc-macro2",
@@ -804,7 +804,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-derive"
-version = "0.50.3"
+version = "1.11.6"
 dependencies = [
  "hex",
  "proc-macro2",
@@ -815,7 +815,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-meta"
-version = "0.50.3"
+version = "1.11.6"
 dependencies = [
  "clap",
  "colored",
@@ -841,14 +841,14 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-modules"
-version = "0.50.3"
+version = "1.11.6"
 dependencies = [
  "dharitri-sc",
 ]
 
 [[package]]
 name = "dharitri-sc-price-aggregator"
-version = "0.50.3"
+version = "1.11.6"
 dependencies = [
  "arrayvec",
  "dharitri-sc",
@@ -869,7 +869,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-scenario"
-version = "0.50.3"
+version = "1.11.6"
 dependencies = [
  "base64",
  "bech32",
@@ -896,7 +896,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-snippets"
-version = "0.50.3"
+version = "1.11.6"
 dependencies = [
  "base64",
  "dharitri-sc-scenario",
@@ -910,14 +910,14 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-wasm-adapter"
-version = "0.50.3"
+version = "1.11.6"
 dependencies = [
  "dharitri-sc",
 ]
 
 [[package]]
 name = "dharitri-sc-wrewa-swap"
-version = "0.50.3"
+version = "1.11.6"
 dependencies = [
  "dharitri-sc",
  "dharitri-sc-modules",
@@ -935,7 +935,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sdk"
-version = "0.4.1"
+version = "1.11.6"
 dependencies = [
  "anyhow",
  "base64",
