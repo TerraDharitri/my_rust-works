@@ -1,0 +1,27 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "common",
+    "common-wasm",
+    "common-non-wasm",
+    "moon-color",
+    "sphere",
+
+    "benchmark-gas",
+    "interact",
+
+    "paint-harvest-sc",
+    "paint-harvest-sc/meta",
+
+    "paint-the-moon-sc",
+    "paint-the-moon-sc/meta",
+
+    "static-web-server",
+
+    # "moon-render-yew",
+    # "microservice",
+
+    "tools/img-processing",
+    # "tools/moon-plotter",
+]

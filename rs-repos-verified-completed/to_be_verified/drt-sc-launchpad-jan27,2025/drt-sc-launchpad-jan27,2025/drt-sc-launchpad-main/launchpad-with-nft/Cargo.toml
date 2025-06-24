@@ -1,0 +1,33 @@
+[package]
+name = "launchpad-with-nft"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies.launchpad-common]
+path = "../launchpad-common"
+
+[dependencies.dharitri-sc]
+#varsha version = "0.54.2"
+path = "C:/Users/tejas/Downloads/my_works-main/my_works-main/rs-sdks/drt-rs-sdk-0.54.2/framework/base"
+
+[dependencies.dharitri-sc-modules]
+#varsha version = "0.54.2"
+path = "C:/Users/tejas/Downloads/my_works-main/my_works-main/rs-sdks/drt-rs-sdk-0.54.2/contracts/modules"
+
+[dev-dependencies]
+num-bigint = "0.4.2"
+num-traits = "0.2"
+hex = "0.4"
+
+[dev-dependencies.dharitri-sc-meta-lib]
+#varsha version = "0.54.2"
+path = "C:/Users/tejas/Downloads/my_works-main/my_works-main/rs-sdks/drt-rs-sdk-0.54.2/framework/meta-lib"
+
+[dev-dependencies.dharitri-sc-scenario]
+#varsha version = "0.54.2"
+path = "C:/Users/tejas/Downloads/my_works-main/my_works-main/rs-sdks/drt-rs-sdk-0.54.2/framework/scenario"

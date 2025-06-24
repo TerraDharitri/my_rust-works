@@ -1,0 +1,19 @@
+[package]
+name = "locking_module"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies.dharitri-sc]
+version = "=1.14.0"
+#path = "/home/dugong/Desktop/teja-work/my_works1/rs-sdks/drt-rs-sdk-0.53.0/framework/base"
+features = ["dcdt-token-payment-legacy-decode"]
+
+[dependencies.simple-lock]
+path = "../../../locked-asset/simple-lock"
+
+[dependencies.energy-factory]
+path = "../../../locked-asset/energy-factory"

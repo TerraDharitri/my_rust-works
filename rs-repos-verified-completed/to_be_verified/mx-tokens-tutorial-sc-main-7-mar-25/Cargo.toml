@@ -1,0 +1,31 @@
+[package]
+name = "my-token-contract"
+version = "0.0.0"
+publish = false
+edition = "2021"
+authors = ["contact@dharitri.org"]
+
+[lib]
+path = "src/my_token_contract.rs"
+
+# [dependencies.dharitri-sc]     #thrivenee
+# version = "0.55.0"
+
+# [dev-dependencies]
+# num-bigint = "0.4"
+
+# [dev-dependencies.dharitri-sc-scenario]
+# version = "0.55.0"
+
+[dependencies.dharitri-sc]
+path = "/home/dugong/Documents/my_works-main/rs-sdks/drt-rs-sdk-0.56.1-v1/framework/base"
+
+[dev-dependencies]
+num-bigint = "0.4"
+
+[dev-dependencies.dharitri-sc-scenario]
+path = "/home/dugong/Documents/my_works-main/rs-sdks/drt-rs-sdk-0.56.1-v1/framework/scenario"
+
+
+[workspace]
+members = [".", "meta", "interactor"]

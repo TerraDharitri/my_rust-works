@@ -1,0 +1,26 @@
+[package]
+name = "paint-the-moon-sc"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/paint_the_moon_sc.rs"
+
+[features]
+default = ["block-size-8"]
+block-size-4 = []
+block-size-8 = []
+block-size-16 = []
+block-size-32 = []
+block-size-64 = []
+
+[dependencies.dharitri-sc]
+git = "https://github.com/TerraDharitri/drt-rs-sdk"
+rev = "d37a5bf2ff061da8cd087ede1bad3f5cf75800a9"
+
+[dev-dependencies.dharitri-sc-scenario]
+git = "https://github.com/TerraDharitri/drt-rs-sdk"
+rev = "d37a5bf2ff061da8cd087ede1bad3f5cf75800a9"
+

@@ -1,0 +1,36 @@
+[package]
+name = "multisig-improved"
+version = "1.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies.dharitri-sc]
+version = "=1.13.6"
+
+# [dependencies.dharitri-sc]
+# path = "/home/kasia/documents/repos/my_works-main/rs-sdks/drt-rs-sdk-0.52.3/framework/base"
+
+[dependencies.dharitri-sc-modules]
+version = "=1.13.6"
+
+# [dependencies.dharitri-sc-modules]
+# path = "/home/kasia/documents/repos/my_works-main/rs-sdks/drt-rs-sdk-0.52.3/contracts/modules"
+
+
+[dev-dependencies.dharitri-sc-scenario]
+version = "=1.13.6"
+
+# [dev-dependencies.dharitri-sc-scenario]
+# path = "/home/kasia/documents/repos/my_works-main/rs-sdks/drt-rs-sdk-0.52.3/framework/scenario"
+
+[dev-dependencies.adder]
+git = "https://github.com/TerraDharitri/drt-rs-contracts"
+rev = "f5cf436"
+
+[dev-dependencies.factorial]
+git = "https://github.com/TerraDharitri/drt-rs-contracts"
+rev = "f5cf436"

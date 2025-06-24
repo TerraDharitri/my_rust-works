@@ -1,0 +1,17 @@
+[package]
+name = "launchpad-with-nft-meta"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+publish = false
+
+[dependencies.launchpad-with-nft]
+path = ".."
+
+[dependencies.dharitri-sc]
+#varsha version = "0.54.2"
+path = "C:/Users/tejas/Downloads/my_works-main/my_works-main/rs-sdks/drt-rs-sdk-0.54.2/framework/base"
+
+[dependencies.dharitri-sc-meta-lib]
+#varsha version = "0.54.2"
+path = "C:/Users/tejas/Downloads/my_works-main/my_works-main/rs-sdks/drt-rs-sdk-0.54.2/framework/meta-lib"

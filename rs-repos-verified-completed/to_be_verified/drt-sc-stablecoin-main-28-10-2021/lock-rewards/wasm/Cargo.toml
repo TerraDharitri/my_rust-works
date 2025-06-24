@@ -1,0 +1,35 @@
+[package]
+name = "lock-rewards-wasm"
+version = "0.0.1"
+authors = ["contact@dharitri.org"]
+edition = "2018"
+publish = false
+
+[lib]
+crate-type = [ "cdylib",]
+
+[workspace]
+members = [ ".",]
+
+[dev-dependencies]
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+lto = true
+debug = false
+panic = "abort"
+
+[dependencies.lock-rewards]
+features = [ "wasm-output-mode",]
+default-features = false
+path = ".."
+ 
+# [dependencies.numbat-wasm-output]                             //nishtha
+# version = "0.17.2"
+# features = ["wasm-output-mode", "panic-message"]
+
+[dependencies.numbat-wasm-output]
+path = "/home/kasia/documents/my_works/rs-sdks/drt-rs-sdk-0.17.2/numbat-wasm-output"
+features = ["wasm-output-mode", "panic-message"]
+

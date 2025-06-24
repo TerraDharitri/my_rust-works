@@ -1,0 +1,72 @@
+[package]
+name = "dex-tests"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies.dharitri-sc]
+version = "1.13.6" 
+#[dependencies.dharitri-sc]
+#path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-1.13.6/framework/base"
+#features = ["dcdt-token-payment-legacy-decode"]
+
+[dev-dependencies]
+num-bigint = "0.4.2"
+
+# [dev-dependencies.dharitri-sc-modules]
+# version = "=1.13.6" #teja789
+#[dependencies.dharitri-sc-modules]
+#path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-1.13.6/contracts/modules"
+
+[dev-dependencies.dharitri-sc-scenario]
+version = "=1.13.6" 
+#[dependencies.dharitri-sc-scenario]
+#path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-1.13.6/framework/scenario"
+
+[dev-dependencies.config]
+path = "../common/modules/farm/config"
+
+[dev-dependencies.farm_token]
+path = "../common/modules/farm/farm_token"
+
+[dev-dependencies.rewards]
+path = "../common/modules/farm/rewards"
+
+[dev-dependencies.locking_module]
+path = "../common/modules/locking_module"
+
+[dev-dependencies.pausable]
+path = "../common/modules/pausable"
+
+[dev-dependencies.common_structs]
+path = "../common/common_structs"
+
+[dev-dependencies.farm]
+path = "farm"
+
+[dev-dependencies.farm-staking]
+path = "../farm-staking/farm-staking"
+
+[dev-dependencies.farm-staking-proxy]
+path = "../farm-staking/farm-staking-proxy"
+
+[dev-dependencies.factory]
+path = "../locked-asset/factory"
+
+[dev-dependencies.simple-lock]
+path = "../locked-asset/simple-lock"
+
+[dev-dependencies.pair]
+path = "pair"
+
+[dev-dependencies.router]
+path = "router"
+
+[dev-dependencies.governance]
+path = "governance"
+
+[dev-dependencies.fees-collector]
+path = "../energy-integration/fees-collector"
+
+[dev-dependencies.farm-boosted-yields]
+path = "../energy-integration/farm-boosted-yields"

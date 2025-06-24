@@ -1,0 +1,210 @@
+{
+    "buildInfo": {
+        "rustc": {
+            "version": "1.84.0",
+            "commitHash": "9fc6b43126469e3858e2fe86cafb4f0fd5068869",
+            "commitDate": "2025-01-07",
+            "channel": "Stable",
+            "short": "rustc 1.84.0 (9fc6b4312 2025-01-07)"
+        },
+        "contractCrate": {
+            "name": "my-token-contract",
+            "version": "0.0.0"
+        },
+        "framework": {
+            "name": "dharitri-sc",
+            "version": "0.55.0"
+        }
+    },
+    "docs": [
+        "An empty contract. To be used as a template when starting a new contract from scratch."
+    ],
+    "name": "MyTokenContract",
+    "constructor": {
+        "inputs": [],
+        "outputs": []
+    },
+    "upgradeConstructor": {
+        "inputs": [],
+        "outputs": []
+    },
+    "endpoints": [
+        {
+            "name": "issue_nft_token_id",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "REWA"
+            ],
+            "inputs": [
+                {
+                    "name": "token_display_name",
+                    "type": "bytes"
+                },
+                {
+                    "name": "token_ticker",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "issue_sft_token_id",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "REWA"
+            ],
+            "inputs": [
+                {
+                    "name": "token_display_name",
+                    "type": "bytes"
+                },
+                {
+                    "name": "token_ticker",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "issue_fungible_token_id",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "REWA"
+            ],
+            "inputs": [
+                {
+                    "name": "token_display_name",
+                    "type": "bytes"
+                },
+                {
+                    "name": "token_ticker",
+                    "type": "bytes"
+                },
+                {
+                    "name": "initial_supply",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "add_roles",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "roles",
+                    "type": "List<DcdtLocalRole>"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "add_quantity",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "nonce",
+                    "type": "u64"
+                },
+                {
+                    "name": "amount",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "mint_nft",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "amount",
+                    "type": "BigUint"
+                },
+                {
+                    "name": "name",
+                    "type": "bytes"
+                },
+                {
+                    "name": "royalties",
+                    "type": "BigUint"
+                },
+                {
+                    "name": "hash",
+                    "type": "bytes"
+                },
+                {
+                    "name": "attributes",
+                    "type": "MockAttr"
+                },
+                {
+                    "name": "uris",
+                    "type": "List<bytes>"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "u64"
+                }
+            ]
+        },
+        {
+            "name": "last_issued_token_id",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "TokenIdentifier"
+                }
+            ]
+        }
+    ],
+    "dcdtAttributes": [],
+    "hasCallback": true,
+    "types": {
+        "DcdtLocalRole": {
+            "type": "enum",
+            "variants": [
+                {
+                    "name": "None",
+                    "discriminant": 0
+                },
+                {
+                    "name": "Mint",
+                    "discriminant": 1
+                },
+                {
+                    "name": "Burn",
+                    "discriminant": 2
+                },
+                {
+                    "name": "NftCreate",
+                    "discriminant": 3
+                },
+                {
+                    "name": "NftAddQuantity",
+                    "discriminant": 4
+                },
+                {
+                    "name": "NftBurn",
+                    "discriminant": 5
+                },
+                {
+                    "name": "NftAddUri",
+                    "discriminant": 6
+                },
+                {
+                    "name": "NftUpdateAttributes",
+                    "discriminant": 7
+                },
+                {
+                    "name": "Transfer",
+                    "discriminant": 8
+                }
+            ]
+        },
+        "MockAttr": {
+            "type": "struct"
+        }
+    }
+}

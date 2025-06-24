@@ -1,0 +1,39 @@
+[[proxy]]
+path = "../common/src/proxies/paint_the_moon_proxy.rs"
+
+[settings]
+main = "main"
+
+[contracts.main]
+name = "paint-the-moon"
+
+[contracts.block4]
+name = "block-4"
+default-features = false
+add-labels = ["block-benchmark"]
+features = ["block-size-4"]
+
+[contracts.block8]
+name = "block-8"
+default-features = false
+add-labels = ["block-benchmark"]
+features = ["block-size-8"]
+
+[contracts.block16]
+name = "block-16"
+default-features = false
+add-labels = ["block-benchmark"]
+features = ["block-size-16"]
+
+[contracts.block32]
+name = "block-32"
+default-features = false
+add-labels = ["block-benchmark"]
+features = ["block-size-32"]
+
+[[proxy]]
+path = "src/paint_proxy.rs"
+
+[[proxy]]
+path = "../benchmark-gas/src/moon_proxy.rs"
+add-labels = ["block-benchmark"]

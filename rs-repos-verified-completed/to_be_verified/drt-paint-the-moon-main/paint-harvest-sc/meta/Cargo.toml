@@ -1,0 +1,12 @@
+[package]
+name = "paint-harvest-sc-meta"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies.paint-harvest-sc]
+path = ".."
+
+[dependencies.dharitri-sc-meta-lib]
+git = "https://github.com/TerraDharitri/drt-rs-sdk"
+rev = "d37a5bf2ff061da8cd087ede1bad3f5cf75800a9"

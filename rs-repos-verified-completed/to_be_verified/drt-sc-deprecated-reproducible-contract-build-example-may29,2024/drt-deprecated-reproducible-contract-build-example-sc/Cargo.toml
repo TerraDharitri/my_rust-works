@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "adder",
+    "adder/meta",
+
+    "lottery-dcdt",
+    "lottery-dcdt/meta",
+
+    "multisig",
+    "multisig/meta"
+]

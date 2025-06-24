@@ -1,0 +1,16 @@
+[package]
+name = "passthrough-meta"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies.passthrough]
+path = ".."
+ 
+[dependencies.dharitri-sc-meta-lib]
+version = "=1.13.6"
+default-features = false
+
+# [dependencies.dharitri-sc-meta-lib]
+# path = "/home/kasia/documents/repos/my_works-main/rs-sdks/drt-rs-sdk-0.52.3/framework/meta-lib"
+# default-features = false

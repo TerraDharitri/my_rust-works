@@ -1,0 +1,27 @@
+[package]
+name = "simple-dcdt-test"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/simple_dcdt_test.rs"
+
+# [dependencies.dharitri-sc]         #thrivenee
+# version = "0.51.1"
+
+# [dev-dependencies]
+# num-bigint = "0.4"
+
+# [dev-dependencies.dharitri-sc-scenario]
+# version = "0.51.1"
+
+[dependencies.dharitri-sc]
+path = "/home/dugong/Documents/my_works-main/rs-sdks/drt-rs-sdk-0.51.1/framework/base"
+
+[dev-dependencies]
+num-bigint = "0.4"
+
+[dev-dependencies.dharitri-sc-scenario]
+path = "/home/dugong/Documents/my_works-main/rs-sdks/drt-rs-sdk-0.51.1/framework/scenario"

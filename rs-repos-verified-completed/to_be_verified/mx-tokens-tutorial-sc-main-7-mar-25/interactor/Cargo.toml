@@ -1,0 +1,38 @@
+[package]
+name = "rust-interact"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+publish = false
+
+[[bin]]
+name = "rust-interact"
+path = "src/interactor_main.rs"
+
+[lib]
+path = "src/interact.rs"
+
+[dependencies.my-token-contract]
+path = ".."
+
+# [dependencies.dharitri-sc-snippets]        #thrivenee
+# version = "0.55.0"
+
+# [dependencies.dharitri-sc]          #thrivenee
+# version = "0.55.0"
+
+[dependencies.dharitri-sc-snippets]
+path = "/home/dugong/Documents/my_works-main/rs-sdks/drt-rs-sdk-0.56.1-v1/framework/snippets"
+
+[dependencies.dharitri-sc]
+path = "/home/dugong/Documents/my_works-main/rs-sdks/drt-rs-sdk-0.56.1-v1/framework/base"
+
+
+[dependencies]
+clap = { version = "4.4.7", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8.6"
+
+[features]
+chain-simulator-tests = []
+

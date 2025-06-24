@@ -1,0 +1,126 @@
+{
+    "buildInfo": {
+        "rustc": {
+            "version": "1.80.0",
+            "commitHash": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "commitDate": "2024-07-21",
+            "channel": "Stable",
+            "short": "rustc 1.80.0 (051478957 2024-07-21)"
+        },
+        "contractCrate": {
+            "name": "simple-dcdt-test",
+            "version": "0.0.0"
+        },
+        "framework": {
+            "name": "TerraDharitri-sc",
+            "version": "0.51.1"
+        }
+    },
+    "name": "SimpleDcdtTest",
+    "constructor": {
+        "inputs": [],
+        "outputs": []
+    },
+    "upgradeConstructor": {
+        "inputs": [],
+        "outputs": []
+    },
+    "endpoints": [
+        {
+            "name": "local_mint",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "token_id",
+                    "type": "TokenIdentifier"
+                },
+                {
+                    "name": "nonce",
+                    "type": "u64"
+                },
+                {
+                    "name": "amount",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "burn",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "name": "nft_create",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "token_id",
+                    "type": "TokenIdentifier"
+                },
+                {
+                    "name": "nonce",
+                    "type": "u64"
+                },
+                {
+                    "name": "amount",
+                    "type": "BigUint"
+                },
+                {
+                    "name": "token_type",
+                    "type": "DcdtTokenType"
+                },
+                {
+                    "name": "creator",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": []
+        }
+    ],
+    "dcdtAttributes": [],
+    "hasCallback": false,
+    "types": {
+        "DcdtTokenType": {
+            "type": "enum",
+            "variants": [
+                {
+                    "name": "Fungible",
+                    "discriminant": 0
+                },
+                {
+                    "name": "NonFungible",
+                    "discriminant": 1
+                },
+                {
+                    "name": "NonFungibleV2",
+                    "discriminant": 2
+                },
+                {
+                    "name": "SemiFungible",
+                    "discriminant": 3
+                },
+                {
+                    "name": "MetaFungible",
+                    "discriminant": 4
+                },
+                {
+                    "name": "DynamicNFT",
+                    "discriminant": 5
+                },
+                {
+                    "name": "DynamicSFT",
+                    "discriminant": 6
+                },
+                {
+                    "name": "DynamicMeta",
+                    "discriminant": 7
+                }
+            ]
+        }
+    }
+}

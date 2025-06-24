@@ -1,0 +1,10 @@
+# chain_type = 'simulator'
+# gateway_uri = 'http://localhost:8085'
+# # moon_address = 'drt1qqqqqqqqqqqqqpgqj9uy4yg3fu67362rmth3ylgd5km8fej3wadsxf70gg'
+# moon_address = 'drt1qqqqqqqqqqqqqpgq8zgudcmu5fskkppdvyfzstnxnqnrkqkxwads3magf2'
+
+
+chain_type = 'real'
+gateway_uri = 'https://devnet-gateway.dharitri.org'
+moon_address = 'drt1qqqqqqqqqqqqqpgqn59se52ln7t4lgvlqk3kakh232pava4dwadsm9un6m'
+

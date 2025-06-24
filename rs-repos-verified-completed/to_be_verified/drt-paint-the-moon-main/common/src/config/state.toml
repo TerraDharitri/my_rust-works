@@ -1,0 +1,5 @@
+gateway = "https://devnet-gateway.dharitri.org"
+microservice_url = "http://127.0.0.1:8089"
+redis_url = "redis://localhost:6379"
+paint_the_moon_address = "drt1qqqqqqqqqqqqqpgqpr9lwg89aqfvtrwejsq96zrcm2c3za2ta4sqf29jve"
+paint_harvest_address = "drt1qqqqqqqqqqqqqpgqf8snmxxg4tkq8fg7hl8uqamkgdwy29fga4sq05an64"
