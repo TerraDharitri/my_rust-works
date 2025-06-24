@@ -6,7 +6,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-## [numbat-wasm 0.14.0, denali 0.6.0, numbat-codec 0.5.1]
+## [numbat-wasm 0.14.0, denali 0.6.0, numbat-codec 0.0.5]
 - DCDT functionality:
 	- DCDT system smart contract proxy, though which it is possible to mint, burn, issue, freeze, pause, etc.
 	- Endpoints to handle NFTs. Also added NFT management in the  DCDT system smart contract proxy
@@ -152,7 +152,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Avoid function selector infinite loop
 - Crowdfunding contract initial commit
 
-## [numbat-wasm 0.7.0, denali 0.1.0] - 2020-10-06
+## [numbat-wasm 0.7.0, denali 0.0.5] - 2020-10-06
 - Code coverage now possible
 - Denali in Rust
 - Modules properly integrated in the build process
@@ -178,14 +178,14 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - MultiResultVec - new, from_iter
 - EncodeError type
 
-## [numbat-wasm 0.5.3, numbat-codec 0.1.0] - 2020-07-10
+## [numbat-wasm 0.5.3, numbat-codec 0.0.5] - 2020-07-10
 - Extracted numbat-codec to separate crate
 - Fixed non_snake_case endpoint handling
 
 ## [numbat-wasm 0.5.2] - 2020-07-09
 - Queue type
 
-## [numbat-wasm 0.5.1] - 2020-07-02
+## [numbat-wasm 0.0.5] - 2020-07-02
 - `#[view]` attribute, same as `#[endpoint]`
 - `#[init]` attribute
 - `storage get mut` annotation + BorrowedMutStorage
@@ -250,7 +250,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [numbat-wasm 0.1.1] - 2020-02-27
 - Async call contract proxy infrastructure
 
-## [numbat-wasm 0.1.0] - 2020-02-05 
+## [numbat-wasm 0.0.5] - 2020-02-05 
 - Initial relase of the framework
 - Main features at this time:
 	- contract main macro
