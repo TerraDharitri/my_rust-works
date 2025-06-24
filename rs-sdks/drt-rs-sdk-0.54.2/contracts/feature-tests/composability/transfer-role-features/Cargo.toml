@@ -12,13 +12,13 @@ path = "src/lib.rs"
 path = "../vault"
 
 [dependencies.dharitri-sc]
-version = "0.54.2"
+version = "1.15.4"
 path = "../../../../framework/base"
 
 [dependencies.dharitri-sc-modules]
-version = "0.54.2"
+version = "1.15.4"
 path = "../../../../contracts/modules"
 
 [dev-dependencies.dharitri-sc-scenario]
-version = "0.54.2"
+version = "1.15.4"
 path = "../../../../framework/scenario"

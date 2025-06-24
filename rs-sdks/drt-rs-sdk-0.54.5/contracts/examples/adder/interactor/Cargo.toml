@@ -16,7 +16,7 @@ path = "src/basic_interactor.rs"
 path = ".."
 
 [dependencies.dharitri-sc-snippets]
-version = "0.54.5"
+version = "1.15.10"
 path = "../../../../framework/snippets"
 
 [dependencies]

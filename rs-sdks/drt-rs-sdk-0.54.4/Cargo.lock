@@ -846,7 +846,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-chain-core"
-version = "0.11.1"
+version = "1.15.8"
 dependencies = [
  "bitflags",
  "dharitri-sc-codec",
@@ -854,7 +854,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-chain-scenario-format"
-version = "0.23.0"
+version = "1.15.8"
 dependencies = [
  "bech32",
  "hex",
@@ -867,7 +867,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-chain-vm"
-version = "0.11.1"
+version = "1.15.8"
 dependencies = [
  "bitflags",
  "colored",
@@ -887,7 +887,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc"
-version = "0.54.4"
+version = "1.15.8"
 dependencies = [
  "bitflags",
  "dharitri-chain-core",
@@ -900,7 +900,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-codec"
-version = "0.21.1"
+version = "1.15.8"
 dependencies = [
  "arrayvec",
  "dharitri-sc-codec-derive",
@@ -910,7 +910,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-codec-derive"
-version = "0.21.1"
+version = "1.15.8"
 dependencies = [
  "hex",
  "proc-macro2",
@@ -920,7 +920,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-derive"
-version = "0.54.4"
+version = "1.15.8"
 dependencies = [
  "hex",
  "proc-macro2",
@@ -931,7 +931,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-meta"
-version = "0.54.4"
+version = "1.15.8"
 dependencies = [
  "bip39",
  "clap",
@@ -956,7 +956,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-meta-lib"
-version = "0.54.4"
+version = "1.15.8"
 dependencies = [
  "clap",
  "colored",
@@ -976,14 +976,14 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-modules"
-version = "0.54.4"
+version = "1.15.8"
 dependencies = [
  "dharitri-sc",
 ]
 
 [[package]]
 name = "dharitri-sc-price-aggregator"
-version = "0.54.4"
+version = "1.15.8"
 dependencies = [
  "arrayvec",
  "dharitri-sc",
@@ -1004,7 +1004,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-scenario"
-version = "0.54.4"
+version = "1.15.8"
 dependencies = [
  "base64",
  "bech32",
@@ -1028,7 +1028,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-snippets"
-version = "0.54.4"
+version = "1.15.8"
 dependencies = [
  "anyhow",
  "base64",
@@ -1047,14 +1047,14 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sc-wasm-adapter"
-version = "0.54.4"
+version = "1.15.8"
 dependencies = [
  "dharitri-sc",
 ]
 
 [[package]]
 name = "dharitri-sc-wrewa-swap"
-version = "0.54.4"
+version = "1.15.8"
 dependencies = [
  "dharitri-sc",
  "dharitri-sc-modules",
@@ -1072,7 +1072,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sdk"
-version = "0.7.1"
+version = "1.15.8"
 dependencies = [
  "aes",
  "anyhow",
@@ -1100,7 +1100,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sdk-dapp"
-version = "0.7.1"
+version = "1.15.8"
 dependencies = [
  "anyhow",
  "dharitri-sdk",
@@ -1117,7 +1117,7 @@ dependencies = [
 
 [[package]]
 name = "dharitri-sdk-http"
-version = "0.7.1"
+version = "1.15.8"
 dependencies = [
  "anyhow",
  "dharitri-sdk",
@@ -4261,9 +4261,9 @@ dependencies = [
 
 [[package]]
 name = "tokio-util"
-version = "0.7.13"
+version = "0.7.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d7fcaa8d55a2bdd6b83ace262b016eca0d79ee02818c5c1bcdf0305114081078"
+checksum = "66a539a9ad6d5d281510d5bd368c973d636c02dbf8a67300bfb6b950696ad7df"
 dependencies = [
  "bytes",
  "futures-core",

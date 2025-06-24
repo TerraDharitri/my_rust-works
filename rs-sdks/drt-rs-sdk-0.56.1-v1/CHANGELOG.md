@@ -32,7 +32,7 @@ They are:
 	- `dharitri-sdk-http`
 	- `dharitri-sdk-dapp`
 
-## [sc 0.56.1, chain 0.13.1, sdk 0.8.2] - 2025-02-06
+## [sc 1.17.2, chain 1.17.2, sdk 1.17.2] - 2025-02-06
 - Allow setting gas for callback for direct transfers.
 - NestedEncode for interaction types: TestAddress, TestScAddress and TestTokenIdentifier.
 - Bugfix: pretty representation for ManagedAddress when debugging.
@@ -48,7 +48,7 @@ They are:
 	- API fix of an issue that was preventing set state in chain simulator;
 	- Snippets generator fixes involving the crate path and the upgrade result handler.
 
-## [sc 0.55.0, codec 0.21.2, chain 0.12.0, sdk 0.8.0] - 2025-01-08
+## [sc 0.55.0, codec 1.17.2, chain 0.12.0, sdk 0.8.0] - 2025-01-08
 - Integrating Spica changes into the framework:
 	- REWA+DCDT multi-transfers are now possible:
 		- changed the handling of call values: REWA is treated almost the same as an DCDT in `all_transfers` and `multi_rewa_or_dcdt`, old DCDT methods are given some protection against unexpected scenarios
@@ -148,7 +148,7 @@ They are:
   - Allow signature to be empty in TransactionOnNetwork;
   - Allow return data to be empty in VMOutputApi.
 
-## [sc 0.53.0 codec 0.21.0, vm 0.10.0, sdk 0.6.0, scenario-format 0.23.0] - 2024-09-04
+## [sc 0.53.0 codec 0.21.0, vm 0.10.0, sdk 0.6.0, scenario-format 1.17.2] - 2024-09-04
 - Unified syntax:
   -  Whitebox testing;
   -  Proxy fix for ManagedOption;
@@ -313,7 +313,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 - Support for reading from another contract for the following storage mappers: `AddressToIdMapper`, `BiDiMapper`, `LinkedListMapper`, `SetMapper`, `SingleValueMapper`, `UniqueIdMapper`, `UnorderedSetMapper`, `UserMapper`, `VecMapper`, `WhitelistMapper`.
 - Additional methods to access data nodes directly in the `SetMapper` and `QueueMapper`.
 
-## [sc 0.47.2, codec 0.18.6, vm 0.8.2, scenario-format 0.22.2] - 2024-02-02
+## [sc 0.47.2, codec 0.18.6, vm 1.17.2, scenario-format 0.22.2] - 2024-02-02
 - Scenario testing infrastructure:
 	- The Rust VM can generate mock addresses, if not specified in advance.
 	- The `sc:` syntax now generates addresses with VM type 0x0500, same as the latest version of drt-go-scenario.
@@ -643,7 +643,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 - New standard module: `StakingModule`.
 
 
-## [numbat-wasm 0.31.1, denali 0.13.1] - 2022-05-04
+## [numbat-wasm 0.31.1, denali 1.17.2] - 2022-05-04
 - Bugfix - formatter single char issue.
 
 ## [numbat-wasm 0.31.0, numbat-codec 0.11.0, denali 0.13.0] - 2022-05-02
@@ -750,7 +750,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 - `ArrayVec` serialization
 - `ManagedAddress` additional conversions
 
-## [numbat-wasm 0.23.0] - 2021-11-23
+## [numbat-wasm 1.17.2] - 2021-11-23
 - Static access to API. Static thread-local context stack in the debugger.
 
 ## [numbat-wasm 0.22.11] - 2021-11-17
@@ -764,7 +764,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 - `ManagedVarArgsEager` implementation
 - `DcdtLocalRoleFlags`, no heap allocation in `get_dcdt_local_roles`
 
-## [numbat-wasm 0.22.8, numbat-codec 0.8.2] - 2021-11-12
+## [numbat-wasm 0.22.8, numbat-codec 1.17.2] - 2021-11-12
 - Optimized decode unsigned number from slice
 
 ## [numbat-wasm 0.22.7] - 2021-11-12
@@ -801,7 +801,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 - Contract `meta` crates are now capable of building the respective contracts and the ABIs without relying on `drtpy`.
 - Renamed feature `andes-tests` to `denali-go-tests`
 
-## [numbat-wasm 0.21.2] - 2021-10-26
+## [numbat-wasm 1.17.2] - 2021-10-26
 - Bugfix regarding contract upgrade args in `numbat-wasm-debug`
 
 ## [numbat-wasm 0.21.1, numbat-codec 0.8.1, denali 0.11.1] - 2021-10-26

@@ -33,7 +33,7 @@ They are:
 	- `dharitri-sdk-dapp`
 
 
-## [sc 0.54.5] - 2024-11-28
+## [sc 1.15.10] - 2024-11-28
 - `ManagedVec` - deprecated `sort` and guarded it by the `alloc` feature, since it uses the allocator.
 - `sc-meta`
 	- versioning fix;
@@ -49,7 +49,7 @@ They are:
 ## [sc 0.54.3] - 2024-11-18
 - `#[storage_mapper_from_address]` fixes for: `FungibleTokenMapper`, `NonFungibleTokenMapper`, `TokenAttributesMapper`, `UniqueIdMapper`, `UserMapper`, `AddressToIdMapper`.
 
-## [sc 0.54.2, codec 0.21.1, chain 0.11.1, sdk 0.7.1] - 2024-11-15
+## [sc 0.54.2, codec 1.15.10, chain 1.15.10, sdk 1.15.10] - 2024-11-15
 - Codec improvements:
 	- `MultiValueX` - `TopDecodeMultiLength` implementation fix;
 	- `ManagedVecItem` implented for MultiValue2 and MultiValue3.
@@ -111,7 +111,7 @@ They are:
   - Allow signature to be empty in TransactionOnNetwork;
   - Allow return data to be empty in VMOutputApi.
 
-## [sc 0.53.0 codec 0.21.0, vm 0.10.0, sdk 0.6.0, scenario-format 0.23.0] - 2024-09-04
+## [sc 0.53.0 codec 0.21.0, vm 0.10.0, sdk 0.6.0, scenario-format 1.15.10] - 2024-09-04
 - Unified syntax:
   -  Whitebox testing;
   -  Proxy fix for ManagedOption;
@@ -308,7 +308,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 - Removed `hashbrown` dependency from framework.
 - Imports in output now sorted.
 
-## [sc 0.45.2, codec 0.18.3, vm 0.7.1, scenario-format 0.21.1, sdk 0.3.1] - 2023-12-18
+## [sc 0.45.2, codec 0.18.3, vm 1.15.10, scenario-format 1.15.10, sdk 0.3.1] - 2023-12-18
 - Updated framework dependencies to the latest versions: syn, bitflags, wasmparser, base64, sha2, sha3, itertools, hmac, pem, pbkdf2, etc.
 - `sc-meta` improvements:
 	- `overflow-checks` field in `sc-config.toml`;
@@ -713,7 +713,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 - `ArrayVec` serialization
 - `ManagedAddress` additional conversions
 
-## [numbat-wasm 0.23.0] - 2021-11-23
+## [numbat-wasm 1.15.10] - 2021-11-23
 - Static access to API. Static thread-local context stack in the debugger.
 
 ## [numbat-wasm 0.22.11] - 2021-11-17
@@ -767,7 +767,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 ## [numbat-wasm 0.21.2] - 2021-10-26
 - Bugfix regarding contract upgrade args in `numbat-wasm-debug`
 
-## [numbat-wasm 0.21.1, numbat-codec 0.8.1, denali 0.11.1] - 2021-10-26
+## [numbat-wasm 1.15.10, numbat-codec 0.8.1, denali 1.15.10] - 2021-10-26
 - Relative path improvements and fixes in `numbat-wasm-debug`:
 	- denali-rs `file:` syntax now actually loads files and correctly unifies equivalent paths
 	- debugging now works seamlessly, without needing to temporarily change paths in the tests
@@ -875,7 +875,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 - Published DNS module, which helps contracts register usernames for themselves
 - `DCDTLocalRole` more expressive type ABI
 
-## [numbat-wasm 0.16.1, denali 0.7.1] - 2021-05-18
+## [numbat-wasm 0.16.1, denali 1.15.10] - 2021-05-18
 - Improvements in denali-rs: username, contract owner, nested async calls
 
 ## [numbat-wasm 0.16.0, denali 0.7.0, numbat-codec 0.5.3] - 2021-05-14
@@ -1054,7 +1054,7 @@ First pre-release of the unified syntax. Syntax not yet stabilized, should only 
 - small int EI
 - minor refactors, serialization fixes
 
-## [numbat-wasm 0.7.1] - 2020-10-07
+## [numbat-wasm 1.15.10] - 2020-10-07
 - Avoid function selector infinite loop
 - Crowdfunding contract initial commit
 
