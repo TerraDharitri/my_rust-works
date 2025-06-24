@@ -1,8 +1,0 @@
-[package]
-name = "random"
-version = "0.0.0"
-authors = ["contact@dharitri.org"]
-edition = "2018"
-
-[lib]
-path = "src/lib.rs"

@@ -1,7 +1,0 @@
-[package]
-name = "test-gen"
-version = "0.0.0"
-authors = ["Andrei Marinica <andrei.marinica@numbat.com>"]
-edition = "2018"
-
-[dependencies]
