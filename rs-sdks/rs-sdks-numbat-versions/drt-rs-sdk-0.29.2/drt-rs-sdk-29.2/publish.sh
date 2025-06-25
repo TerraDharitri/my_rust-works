@@ -53,45 +53,45 @@
 #
 
 cd numbat-codec-derive
-cargo publish
+cargo publish --allow-dirty 
 cd ..
 
 sleep 20
 
 cd numbat-codec
-cargo publish
+cargo publish --allow-dirty 
 cd ..
 
 cd denali
-cargo publish
+cargo publish --allow-dirty 
 cd ..
 
 sleep 20
 
 cd numbat-wasm-derive
-cargo publish
+cargo publish --allow-dirty 
 cd ..
 
 sleep 20
 
 cd numbat-wasm
-cargo publish
+cargo publish --allow-dirty 
 cd ..
 
 sleep 20
 
 cd numbat-wasm-node
-cargo publish
+cargo publish --allow-dirty 
 cd ..
 
 cd numbat-wasm-debug
-cargo publish
+cargo publish --allow-dirty 
 cd ..
 
 cd numbat-wasm-output
-cargo publish
+cargo publish --allow-dirty 
 cd ..
 
 cd numbat-wasm-modules
-cargo publish
+cargo publish --allow-dirty 
 cd ..

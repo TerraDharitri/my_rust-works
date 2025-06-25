@@ -1,6 +1,6 @@
 use super::*;
 use alloc::string::String;
-use hashbrown::HashMap;
+use drthashbrown::HashMap;
 
 pub trait TypeDescriptionContainer {
     fn new() -> Self;
