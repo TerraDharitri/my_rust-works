@@ -1,0 +1,30 @@
+[package]
+name = "winners-extractor-wasm"
+version = "0.0.0"
+edition = "2018"
+publish = false
+authors = ["contact@dharitri.org"]
+
+[lib]
+crate-type = [ "cdylib",]
+
+[workspace]
+members = [ ".",]
+
+[dev-dependencies]
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+lto = true
+debug = false
+panic = "abort"
+
+[dependencies.winners-extractor]
+path = ".."
+
+[dependencies.dharitri-sc-wasm-adapter]
+version = "1.0.8"
+
+# [dependencies.dharitri-sc-wasm-adapter]
+# path = "/home/kasia/documents/repos/my_works-main/rs-sdks/drt-rs-sdk-0.39.2/framework/wasm-adapter"

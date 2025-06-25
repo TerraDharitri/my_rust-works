@@ -14,7 +14,7 @@ bitflags = "2.4.1"
 path = "../../common_errors"
 
 [dependencies.dharitri-sc]
-version = "=1.11.10"           
+version = "=1.11.2"           
 features = ["dcdt-token-payment-legacy-decode"]
 
 # [dependencies.dharitri-sc]

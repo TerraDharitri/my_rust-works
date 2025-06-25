@@ -1,0 +1,17 @@
+[package]
+name = "winners-extractor-meta"
+version = "0.0.0"
+edition = "2018"
+publish = false
+authors = ["contact@dharitri.org"]
+
+[dev-dependencies]
+
+[dependencies.winners-extractor]
+path = ".."
+
+[dependencies.dharitri-sc-meta]
+version = "1.0.8"
+
+# [dependencies.dharitri-sc-meta]
+# path = "/home/kasia/documents/repos/my_works-main/rs-sdks/drt-rs-sdk-0.39.2/framework/meta"

@@ -1,0 +1,6 @@
+[package]
+name = "drt-sc-energy-competition-winners-extraction-main-30-01-2023"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]

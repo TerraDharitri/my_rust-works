@@ -8,20 +8,10 @@ publish = false
 [dependencies.numbat-wasm-sc-dns]
 path = ".."
 
-# [dependencies.numbat-wasm]
-# version = "0.0.1"                             #teja789
-
-# [dependencies.numbat-wasm-debug]
-# version = "0.0.1"
-
 [dependencies.numbat-wasm]
-version = "0.29.2"
-path = "/home/dugong/Desktop/teja-work/inprogress/dns-sc-pack/drt-rs-sdk-29.2/numbat-wasm"
+version = "0.0.17"                             #teja789
 
-#teja789  
-#note: changed dev-dependencies to dependencies because the dependency included in main application logic
-[dependencies.numbat-wasm-debug]           
-version = "0.29.2"
-path = "/home/dugong/Desktop/teja-work/inprogress/dns-sc-pack/drt-rs-sdk-29.2/numbat-wasm-debug"
+[dependencies.numbat-wasm-debug]
+version = "0.0.17"
 
 

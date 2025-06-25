@@ -16,9 +16,8 @@ path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.50.1/framew
 
 
 [dependencies.mergeable]
-path = "/home/dugong/Desktop/teja-work/temp/exchange-scs1/drt-sc-exchange-c1362440452f13e4a3b33d93479653619c72c177/common/traits/mergeable"
-# git = "https://github.com/TerraDharitri/drt-sc-exchange"
-# rev = "c136244"
+git = "https://github.com/TerraDharitri/drt-sc-exchange"
+rev = "c6bc46d"
 
 [dev-dependencies]
 num-bigint = "0.4"

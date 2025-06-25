@@ -12,7 +12,7 @@ path = "src/lib.rs"
 hex-literal = "0.3.1"
 
 [dependencies.dharitri-sc]
-version = "=1.11.10"           
+version = "=1.11.2"           
 features = ["dcdt-token-payment-legacy-decode"]
 
 # [dependencies.dharitri-sc]
@@ -20,7 +20,7 @@ features = ["dcdt-token-payment-legacy-decode"]
 # features = ["dcdt-token-payment-legacy-decode"]
 
 [dependencies.dharitri-sc-modules]
-version = "=1.11.10"  
+version = "=1.11.2"  
 # [dependencies.dharitri-sc-modules]
 # path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.50.1/contracts/modules"
 
@@ -73,7 +73,7 @@ path = "../../energy-integration/common-modules/energy-query"
 num-bigint = "0.4.2"
 
 [dev-dependencies.dharitri-sc-scenario]
-version = "=1.11.10"   
+version = "=1.11.2"   
 # [dependencies.dharitri-sc-scenario]
 # path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.50.1/framework/scenario"
 

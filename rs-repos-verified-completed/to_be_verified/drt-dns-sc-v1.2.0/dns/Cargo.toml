@@ -13,26 +13,13 @@ description = "Numbat Domain Name Service smart contract"
 keywords = ["numbat", "wasm", "webassembly", "blockchain", "contract"]
 categories = ["no-std", "wasm", "cryptography::cryptocurrencies", "development-tools"]
 
-# [dependencies.numbat-wasm-modules]
-# version = "0.0.1"
-
-# [dependencies.numbat-wasm]
-# version = "0.0.1"
-
-# [dev-dependencies.numbat-wasm-debug]
-# version = "0.0.1"                           #teja789
-
-
 [dependencies.numbat-wasm-modules]
-version = "0.29.2"
-path = "/home/dugong/Desktop/teja-work/inprogress/dns-sc-pack/drt-rs-sdk-29.2/numbat-wasm-modules"
+version = "0.0.17"
 
 [dependencies.numbat-wasm]
-version = "0.29.2"
-path = "/home/dugong/Desktop/teja-work/inprogress/dns-sc-pack/drt-rs-sdk-29.2/numbat-wasm"
+version = "0.0.17"
 
+[dev-dependencies.numbat-wasm-debug]
+version = "0.0.17"                           #teja789
 
-[dependencies.numbat-wasm-debug]
-version = "0.29.2"
-path = "/home/dugong/Desktop/teja-work/inprogress/dns-sc-pack/drt-rs-sdk-29.2/numbat-wasm-debug"
 

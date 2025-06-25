@@ -32,14 +32,14 @@ hex-literal = "0.3.4"
 path = "../common/common_structs"
 
 [dev-dependencies.pair]
-# git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
-# rev = "1fb9a1d"
-path = "/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/dex/pair"
+git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
+rev = "2e04907"
+# path = "/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/dex/pair"
 
 [dev-dependencies.pausable]
-# git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
-# rev = "1fb9a1d"
-path ="/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/common/modules/pausable"
+git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
+rev = "2e04907"
+# path = "/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/common/modules/pausable"
 
 [dev-dependencies.dharitri-sc-scenario]
 version = "=1.6.4"

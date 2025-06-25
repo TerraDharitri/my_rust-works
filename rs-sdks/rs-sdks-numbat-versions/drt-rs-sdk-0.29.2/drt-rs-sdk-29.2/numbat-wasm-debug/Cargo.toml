@@ -28,6 +28,7 @@ rustc_version = "0.4"
 toml = "0.5.8"
 cargo_toml = "0.14.1"
 pathdiff = "0.2.1"
+ppv-lite86 = "=0.2.16"
 
 [features]
 denali-go-tests = []
