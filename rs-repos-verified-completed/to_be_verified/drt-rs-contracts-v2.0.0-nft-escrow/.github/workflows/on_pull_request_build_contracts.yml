@@ -8,6 +8,6 @@ permissions:
 
 jobs:
   build:
-    uses: TerraDharitri/drt-sc-actions/.github/workflows/reproducible-build.yml@v2.3.1
+    uses: TerraDharitri/drt-sc-actions/.github/workflows/reproducible-build.yml@v0.1.2
     with:
       image_tag: v5.3.0
