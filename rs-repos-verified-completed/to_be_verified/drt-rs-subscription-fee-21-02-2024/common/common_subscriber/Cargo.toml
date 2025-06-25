@@ -1,0 +1,17 @@
+[package]
+name = "common_subscriber"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+
+[lib]
+path = "src/common_subscriber.rs"
+
+[dependencies.subscription-fee]
+path = "../../subscription-fee"
+
+[dependencies.dharitri-sc]
+version = "=1.6.4"
+
+# [dependencies.dharitri-sc]
+# path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.45.2/framework/base"

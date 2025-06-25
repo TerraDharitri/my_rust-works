@@ -1,0 +1,38 @@
+[package]
+name = "flash-mint-provider"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2018"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[features]
+wasm-output-mode = [ "numbat-wasm-node",]
+
+# [dependencies.numbat-wasm]
+# version = "0.17"
+
+# [dependencies.numbat-wasm-derive]
+# version = "0.17"
+
+# [dependencies.numbat-wasm-node]
+# version = "0.17"
+# optional = true
+
+# [dev-dependencies.numbat-wasm-debug]
+# version = "0.17"
+
+[dependencies.numbat-wasm]
+path = "/home/kasia/my_works/rs-sdks/drt-rs-sdk-0.17.2/numbat-wasm"
+
+[dependencies.numbat-wasm-derive]
+path = "/home/kasia/my_works/rs-sdks/drt-rs-sdk-0.17.2/numbat-wasm-derive"
+
+[dependencies.numbat-wasm-node]
+path = "/home/kasia/my_works/rs-sdks/drt-rs-sdk-0.17.2/numbat-wasm-node"
+optional = true
+
+[dev-dependencies.numbat-wasm-debug]
+path = "/home/kasia/my_works/rs-sdks/drt-rs-sdk-0.17.2/numbat-wasm-debug"

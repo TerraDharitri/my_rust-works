@@ -1,0 +1,97 @@
+[package]
+name = "farm-boosted-rewards-subscriber"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2018"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies.dharitri-sc]
+version = "=1.6.4"
+
+[dependencies.dharitri-sc-modules]
+version = "=1.6.4"
+
+# [dependencies.dharitri-sc]
+# path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.45.2/framework/base"
+
+# [dependencies.dharitri-sc-modules]
+# path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.45.2/contracts/modules"
+
+[dependencies.subscription-fee]
+path = "../subscription-fee"
+
+[dependencies.common_subscriber]
+path = "../common/common_subscriber"
+
+[dependencies.common_structs]
+path = "../common/common_structs"
+
+[dependencies.energy-query]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
+# rev = "1fb9a1d"
+path = "/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/energy-integration/common-modules/energy-query"
+
+[dependencies.energy-factory]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
+# rev = "1fb9a1d"
+path = "/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/locked-asset/energy-factory"
+
+[dependencies.pair]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
+# rev = "1fb9a1d"
+path = "/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/dex/pair"
+
+[dependencies.farm-with-locked-rewards]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
+# rev = "1fb9a1d"
+path = "/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/dex/farm-with-locked-rewards"
+
+[dependencies.config]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
+# rev = "1fb9a1d"
+path = "/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/common/modules/farm/config"
+
+[dev-dependencies]
+num-bigint = "0.4.2"
+num-traits = "0.2"
+hex = "0.4"
+hex-literal = "0.3.4"
+
+[dev-dependencies.farm-boosted-yields]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
+# rev = "1fb9a1d"
+path ="/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/energy-integration/farm-boosted-yields"
+
+[dev-dependencies.pausable]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
+# rev = "1fb9a1d"
+path ="/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/common/modules/pausable"
+
+[dev-dependencies.farm_token]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
+# rev = "1fb9a1d"
+path ="/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/common/modules/farm/farm_token"
+
+[dev-dependencies.sc_whitelist_module]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
+# rev = "1fb9a1d"
+path = "/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/common/modules/sc_whitelist_module"
+
+[dev-dependencies.simple-lock]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
+# rev = "1fb9a1d"
+path ="/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/locked-asset/simple-lock"
+
+[dev-dependencies.locking_module]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
+# rev = "1fb9a1d"
+path = "/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/common/modules/locking_module"
+
+[dev-dependencies.dharitri-sc-scenario]
+version = "=1.6.4"
+
+# [dev-dependencies.dharitri-sc-scenario]
+# path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.45.2/framework/scenario"

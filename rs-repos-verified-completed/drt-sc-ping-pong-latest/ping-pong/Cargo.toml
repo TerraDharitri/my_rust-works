@@ -1,0 +1,21 @@
+[package]
+name = "ping-pong"
+version = "0.0.2"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/ping_pong.rs"
+
+# [dependencies.dharitri-sc]            #thrivenee
+# version = "0.54.6"
+
+# [dev-dependencies.dharitri-sc-scenario]      #thrivenee
+# version = "0.54.6"
+
+[dependencies.dharitri-sc]
+path = "/home/dugong/Documents/my_works-main/rs-sdks/drt-rs-sdk-0.56.1-v1/framework/base"
+
+[dev-dependencies.dharitri-sc-scenario]
+path = "/home/dugong/Documents/my_works-main/rs-sdks/drt-rs-sdk-0.56.1-v1/framework/scenario"

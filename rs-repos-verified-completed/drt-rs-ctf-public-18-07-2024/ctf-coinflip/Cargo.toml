@@ -1,0 +1,24 @@
+[package]
+name = "ctf-coinflip"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/ctf_coinflip.rs"
+
+[dependencies.dharitri-sc]          #thrivenee
+version = "=1.12.2"
+
+# [dependencies.dharitri-sc]
+# path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.51.1/framework/base"
+
+[dependencies.bump-common]
+path = "../bump-common"
+
+[dev-dependencies.dharitri-sc-scenario]       #thrivenee
+version = "=1.12.2"
+
+# [dev-dependencies.dharitri-sc-scenario]
+# path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.51.1/framework/scenario"

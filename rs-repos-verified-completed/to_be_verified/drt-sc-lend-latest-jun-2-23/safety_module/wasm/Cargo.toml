@@ -1,0 +1,29 @@
+[package]
+name = "safety-module-wasm"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2018"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[workspace]
+members = ["."]
+
+[dev-dependencies]
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+lto = true
+debug = false
+panic = "abort"
+[dependencies.safety-module]
+path = ".."
+
+# [dependencies.dharitri-sc-wasm-adapter]       #thrivenee
+# version = "0.41.0"
+
+
+[dependencies.dharitri-sc-wasm-adapter]
+path = "/home/dugong/Documents/my_works-main/rs-sdks/drt-rs-sdk-0.41.0/framework/wasm-adapter"

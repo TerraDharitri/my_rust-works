@@ -1,0 +1,48 @@
+[package]
+name = "guild-factory"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+# [dependencies.dharitri-sc]
+# version = "=0.52.3" #teja789
+[dependencies.dharitri-sc]
+path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.52.3/framework/base"
+
+[dependencies.guild-sc]
+path = "../guild-sc"
+
+[dependencies.guild-sc-config]
+path = "../guild-sc-config"
+
+[dependencies.common_structs]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange"
+# rev = "5712bb3"
+path = "/home/dugong/Desktop/teja-work/temp/exchange-scs1/drt-sc-exchange-5712bb35961351d9ad03f339d9b48bc626670637/common/common_structs"
+
+[dependencies.utils]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange"
+# rev = "5712bb3"
+path = "/home/dugong/Desktop/teja-work/temp/exchange-scs1/drt-sc-exchange-5712bb35961351d9ad03f339d9b48bc626670637/common/modules/utils"
+
+# [dependencies.dharitri-sc-modules]
+# version = "=0.52.3" #teja789
+[dependencies.dharitri-sc-modules]
+path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.52.3/contracts/modules"
+
+[dev-dependencies]
+num-bigint = "0.4"
+
+# [dev-dependencies.dharitri-sc-scenario]
+# version = "=0.52.3" #teja789
+[dependencies.dharitri-sc-scenario]
+path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.52.3/framework/scenario"
+
+[dev-dependencies.farm]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange"
+# rev = "5712bb3"
+path = "/home/dugong/Desktop/teja-work/temp/exchange-scs1/drt-sc-exchange-5712bb35961351d9ad03f339d9b48bc626670637/dex/farm"

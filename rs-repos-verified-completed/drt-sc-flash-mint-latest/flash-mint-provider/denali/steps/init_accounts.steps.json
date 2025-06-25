@@ -1,0 +1,59 @@
+{
+    "name": "init accounts",
+    "steps": [
+        {
+            "step": "setState",
+            "accounts": {
+                "address:owner": {
+                    "nonce": "0",
+                    "balance": "1,000,000,000,000",
+                    "dcdt": {
+                        "str:MOA-abcdef": {
+                            "roles": [
+                                "DCDTRoleLocalMint",
+                                "DCDTRoleLocalBurn"
+                            ]
+                        }
+                    },
+                    "storage": {}
+                },
+                "address:user": {
+                    "nonce": "0",
+                    "balance": "1,000,000,000,000",
+                    "storage": {}
+                },
+                "address:user_with_moa": {
+                    "nonce": "0",
+                    "balance": "1,000,000,000,000",
+                    "dcdt": {
+                        "str:MOA-abcdef": "1,000,000,000,000"
+                    },
+                    "storage": {}
+                }
+            }
+        },
+        {
+            "step": "checkState",
+            "accounts": {
+                "address:owner": {
+                    "nonce": "0",
+                    "balance": "1,000,000,000,000",
+                    "storage": {}
+                },
+                "address:user": {
+                    "nonce": "0",
+                    "balance": "1,000,000,000,000",
+                    "storage": {}
+                },
+                "address:user_with_moa": {
+                    "nonce": "0",
+                    "balance": "1,000,000,000,000",
+                    "dcdt": {
+                        "str:MOA-abcdef": "1,000,000,000,000"
+                    },
+                    "storage": {}
+                }
+            }
+        }
+    ]
+}

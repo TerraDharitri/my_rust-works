@@ -1,0 +1,21 @@
+[package]
+name = "common_structs"
+version = "0.0.1"   #teja789 conflicts with common_structs crate in exchange-sc need to test on github
+authors = ["contact@dharitri.org"]
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies.dharitri-sc]
+version = "=1.6.4"
+features = ["dcdt-token-payment-legacy-decode"]
+
+# [dependencies.dharitri-sc]
+# path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.45.2/framework/base"
+# features = ["dcdt-token-payment-legacy-decode"]
+
+[dependencies.mergeable]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
+# rev = "1fb9a1d"
+path = "/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/common/traits/mergeable"

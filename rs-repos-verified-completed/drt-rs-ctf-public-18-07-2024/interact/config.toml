@@ -1,0 +1,4 @@
+gateway = 'https://devnet-gateway.dharitri.org'
+bump_address = "drt1qqqqqqqqqqqqqpgq23j27f6w0r75hfyc5td753f9ahvfpp5x4wzq8g0prs"
+coinflip_address = "drt1qqqqqqqqqqqqqpgq0jtfsyk7rfgu50v6wh5wwtk2mjgseca54wzqe0u2fj"
+gaspass_address = "drt1qqqqqqqqqqqqqpgq5tlkn9qcza52v4dtfzsx99xjxrgtw2p74wzqwc0h6r"

@@ -1,0 +1,27 @@
+[package]
+name = "numbat-wasm-sc-dns-abi"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2018"
+publish = false
+
+[dependencies.numbat-wasm-sc-dns]
+path = ".."
+
+# [dependencies.numbat-wasm]
+# version = "0.0.1"                             #teja789
+
+# [dependencies.numbat-wasm-debug]
+# version = "0.0.1"
+
+[dependencies.numbat-wasm]
+version = "0.29.2"
+path = "/home/dugong/Desktop/teja-work/inprogress/dns-sc-pack/drt-rs-sdk-29.2/numbat-wasm"
+
+#teja789  
+#note: changed dev-dependencies to dependencies because the dependency included in main application logic
+[dependencies.numbat-wasm-debug]           
+version = "0.29.2"
+path = "/home/dugong/Desktop/teja-work/inprogress/dns-sc-pack/drt-rs-sdk-29.2/numbat-wasm-debug"
+
+

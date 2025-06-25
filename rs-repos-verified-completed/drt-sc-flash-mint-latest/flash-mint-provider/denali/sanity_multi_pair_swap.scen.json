@@ -1,0 +1,50 @@
+{
+    "name": "multi swap test",
+    "steps": [
+        {
+            "step": "externalSteps",
+            "path": "complete_setup.scen.json"
+        },
+        {
+            "step": "scCall",
+            "txId": "multiPairSwap",
+            "tx": {
+                "from": "address:user_with_moa",
+                "to": "sc:dex_router",
+                "value": "0",
+                "dcdt": {
+                    "tokenIdentifier": "str:MOA-abcdef",
+                    "value": "100"
+                },
+                "function": "multiPairSwap",
+                "arguments": [
+                    "sc:moa_wrewa_swap",
+                    "str:swapTokensFixedInput",
+                    "str:WREWA-abcdef",
+                    "150",
+                    "sc:wrewa_busd_swap",
+                    "str:swapTokensFixedInput",
+                    "str:BUSD-abcdef",
+                    "300",
+                    "sc:busd_moa_swap",
+                    "str:swapTokensFixedInput",
+                    "str:MOA-abcdef",
+                    "450"
+                ],
+                "gasLimit": "1,000,000,000",
+                "gasPrice": "0"
+            },
+            "expect": {
+                "out": [
+                    "*",
+                    "*",
+                    "*"
+                ],
+                "status": "0",
+                "message": "*",
+                "gas": "*",
+                "refund": "*"
+            }
+        }
+    ]
+}

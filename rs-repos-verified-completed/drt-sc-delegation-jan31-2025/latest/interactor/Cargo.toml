@@ -1,0 +1,31 @@
+[package]
+name = "rust-interact"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+publish = false
+
+[[bin]]
+name = "rust-interact"
+path = "src/interactor_main.rs"
+
+[lib]
+path = "src/interact.rs"
+
+[dependencies.delegation_latest_full]
+path = ".."
+
+[dependencies.dharitri-sc-snippets]
+version = "1.16.0"
+
+[dependencies.dharitri-sc]
+version = "1.16.0"
+
+[dependencies]
+clap = { version = "4.4.7", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8.6"
+
+[features]
+chain-simulator-tests = []
+

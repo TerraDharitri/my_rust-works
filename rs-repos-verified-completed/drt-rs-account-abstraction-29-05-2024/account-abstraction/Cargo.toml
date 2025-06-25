@@ -1,0 +1,30 @@
+[package]
+name = "account-abstraction"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+# [dependencies.dharitri-sc]                  //nishtha
+# version = "=0.50.1"
+
+[dependencies.dharitri-sc] 
+path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.50.1/framework/base"
+
+
+[dependencies.mergeable]
+path = "/home/dugong/Desktop/teja-work/temp/exchange-scs1/drt-sc-exchange-c1362440452f13e4a3b33d93479653619c72c177/common/traits/mergeable"
+# git = "https://github.com/TerraDharitri/drt-sc-exchange"
+# rev = "c136244"
+
+[dev-dependencies]
+num-bigint = "0.4"
+
+# [dev-dependencies.dharitri-sc-scenario]       //nishtha
+# version = "=0.50.1"
+
+[dev-dependencies.dharitri-sc-scenario]
+path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.50.1/framework/scenario"

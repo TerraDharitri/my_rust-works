@@ -1,0 +1,22 @@
+[package]
+name = "drt-human-codec-wasm"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+getrandom = { version = "0.2.10", features = ["js"] }
+wee_alloc = "0.4.5"
+wasm-bindgen = "0.2.89"
+serde_json = "1.0.108"
+console_error_panic_hook = "0.1.7"
+
+dharitri-sc-codec-human-readable = { git = "https://github.com/laurci/drt-rs-sdk.git", rev = "5ee275ee62940ef16d9a8ca22ded585f7dff914f" }
+dharitri-sc-meta-lib = { git = "https://github.com/laurci/drt-rs-sdk.git", rev = "5ee275ee62940ef16d9a8ca22ded585f7dff914f" }
+dharitri-sc = { git = "https://github.com/laurci/drt-rs-sdk.git", rev = "5ee275ee62940ef16d9a8ca22ded585f7dff914f" }
+
+# dharitri-sc-codec-human-readable = { path = "../../../drt-rs-sdk/data/human-readable" }
+# dharitri-sc-meta = { path = "../../../drt-rs-sdk/framework/meta" }
+# dharitri-sc = { path = "../../../drt-rs-sdk/framework/base" }

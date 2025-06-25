@@ -1,0 +1,48 @@
+[package]
+name = "subscription-fee"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2018"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies.dharitri-sc]
+version = "=1.6.4"
+features = ["dcdt-token-payment-legacy-decode"]
+
+[dependencies.dharitri-sc-modules]
+version = "=1.6.4"
+
+# [dependencies.dharitri-sc]
+# path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.45.2/framework/base"
+# features = ["dcdt-token-payment-legacy-decode"]
+
+# [dependencies.dharitri-sc-modules]
+# path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.45.2/contracts/modules"
+
+[dev-dependencies]
+num-bigint = "0.4.2"
+num-traits = "0.2"
+hex = "0.4"
+hex-literal = "0.3.4"
+
+[dependencies.common_structs]
+path = "../common/common_structs"
+
+[dev-dependencies.pair]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
+# rev = "1fb9a1d"
+path = "/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/dex/pair"
+
+[dev-dependencies.pausable]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange" #teja789
+# rev = "1fb9a1d"
+path ="/home/dugong/Desktop/teja-work/my_rust-works/rs-repos-verified-completed/exchange_by_jai/drt-sc-exchange-1fb9a1dcc47d5a37079b50f8bbd0caa2ebea441e/common/modules/pausable"
+
+[dev-dependencies.dharitri-sc-scenario]
+version = "=1.6.4"
+
+# [dev-dependencies.dharitri-sc-scenario]
+# path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.45.2/framework/scenario"

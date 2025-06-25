@@ -1,0 +1,14 @@
+[package]
+name = "dns-meta"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+publish = false
+[dependencies.dns]
+path = ".."
+
+# [dependencies.dharitri-sc-meta] #teja789
+# version = "1.0.1"
+
+[dependencies.dharitri-sc-meta]
+path = "/home/dugong/Desktop/teja-work/my_rust-works/rs-sdks/drt-rs-sdk-0.39.5/framework/meta"

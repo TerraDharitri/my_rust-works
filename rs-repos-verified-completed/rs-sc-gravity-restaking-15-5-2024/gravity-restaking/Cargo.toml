@@ -1,0 +1,34 @@
+[package]
+name = "gravity-restaking"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+# [dependencies.dharitri-sc]
+# version = "=0.48.0"
+
+[dependencies.dharitri-sc]
+path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.48.0/framework/base"
+
+[dependencies.mergeable]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange"
+# rev = "27085fb"
+path = "/home/dugong/Desktop/teja-work/temp/exchange-scs1/drt-sc-exchange-27085fb87fec527938d45c063962a0bc44b2d42c/common/traits/mergeable"
+
+[dependencies.utils]
+# git = "https://github.com/TerraDharitri/drt-sc-exchange"
+# rev = "27085fb"
+path = "/home/dugong/Desktop/teja-work/temp/exchange-scs1/drt-sc-exchange-27085fb87fec527938d45c063962a0bc44b2d42c/common/modules/utils"
+
+[dev-dependencies]
+num-bigint = "0.4"
+
+# [dev-dependencies.dharitri-sc-scenario]
+# version = "=0.48.0"
+
+[dev-dependencies.dharitri-sc-scenario]
+path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.48.0/framework/scenario"

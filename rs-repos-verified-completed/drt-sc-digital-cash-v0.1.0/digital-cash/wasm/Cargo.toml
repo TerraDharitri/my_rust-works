@@ -1,0 +1,29 @@
+[package]
+name = "digital-cash-wasm"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[workspace]
+members = ["."]
+
+[dev-dependencies]
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+lto = true
+debug = false
+panic = "abort"
+
+[dependencies.digital-cash]
+path = ".."
+
+# [dependencies.dharitri-sc-wasm-adapter]
+# version = "0.43.3"
+[dependencies.dharitri-sc-wasm-adapter]
+path = "/home/saikumar/Dugong/github-repos/github-teja/my_works/rs-sdks/drt-rs-sdk-0.43.3/framework/wasm-adapter"

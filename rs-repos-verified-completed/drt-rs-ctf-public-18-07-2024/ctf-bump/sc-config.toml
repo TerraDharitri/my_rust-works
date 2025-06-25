@@ -1,0 +1,5 @@
+[settings]
+
+[[proxy]]
+path = "../interact/src/ctf_bump_proxy.rs"
+override-import = "use dharitri_sc_snippets::dharitri_sc::imports::*;"

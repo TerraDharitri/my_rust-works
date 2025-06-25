@@ -1,0 +1,39 @@
+[package]
+name = "dns-wasm"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+
+[features]
+default = []
+wasm32-support = ["getrandom/js"]
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+lto = true
+debug = false
+panic = "abort"
+
+[dependencies]
+once_cell = "1.18.0"
+num-bigint = { version = "0.4.0", default-features = false}
+getrandom = { version = "0.2.7",features = ["js"]}
+
+
+[dependencies.dns]
+path = ".."
+
+#teja789
+# [dependencies.dharitri-sc-wasm-adapter]
+# version = "1.0.1"   
+#teja789                      
+
+[dependencies.dharitri-sc-wasm-adapter]
+path = "/home/dugong/Desktop/teja-work/my_rust-works/rs-sdks/drt-rs-sdk-0.39.5/framework/wasm-adapter"
+default-features = false
+
+[workspace]
+members = ["."]

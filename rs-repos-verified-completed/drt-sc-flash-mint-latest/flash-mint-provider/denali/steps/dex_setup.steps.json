@@ -1,0 +1,105 @@
+{
+    "name": "deploy contract",
+    "steps": [
+        {
+            "step": "setState",
+            "accounts": {
+                "sc:moa_wrewa_swap": {
+                    "nonce": "0",
+                    "balance": "0",
+                    "dcdt": {
+                        "str:MOA-abcdef": {
+                            "balance": "1000000000"
+                        },
+                        "str:WREWA-abcdef": {
+                            "balance": "2000000000"
+                        }
+                    },
+                    "storage": {
+                        "str:first_token_id": "str:MOA-abcdef",
+                        "str:second_token_id": "str:WREWA-abcdef",
+                        "str:reserve|nested:str:MOA-abcdef": "1000000000",
+                        "str:reserve|nested:str:WREWA-abcdef": "2000000000",
+                        "str:total_supply": "2000000000",
+                        "str:total_fee_percent": "300",
+                        "str:special_fee_percent": "100",
+                        "str:transfer_exec_gas_limit": "35000000",
+                        "str:state": "1"
+                    },
+                    "code": "file:../dex_wasms/numbat_dex_pair.wasm"
+                },
+                "sc:wrewa_busd_swap": {
+                    "nonce": "0",
+                    "balance": "0",
+                    "dcdt": {
+                        "str:WREWA-abcdef": {
+                            "balance": "1000000000"
+                        },
+                        "str:BUSD-abcdef": {
+                            "balance": "2000000000"
+                        }
+                    },
+                    "storage": {
+                        "str:first_token_id": "str:WREWA-abcdef",
+                        "str:second_token_id": "str:BUSD-abcdef",
+                        "str:reserve|nested:str:WREWA-abcdef": "1000000000",
+                        "str:reserve|nested:str:BUSD-abcdef": "2000000000",
+                        "str:total_supply": "2000000000",
+                        "str:total_fee_percent": "300",
+                        "str:special_fee_percent": "100",
+                        "str:transfer_exec_gas_limit": "35000000",
+                        "str:state": "1"
+                    },
+                    "code": "file:../dex_wasms/numbat_dex_pair.wasm"
+                },
+                "sc:busd_moa_swap": {
+                    "nonce": "0",
+                    "balance": "0",
+                    "dcdt": {
+                        "str:BUSD-abcdef": {
+                            "balance": "1000000000"
+                        },
+                        "str:MOA-abcdef": {
+                            "balance": "2000000000"
+                        }
+                    },
+                    "storage": {
+                        "str:first_token_id": "str:BUSD-abcdef",
+                        "str:second_token_id": "str:MOA-abcdef",
+                        "str:reserve|nested:str:BUSD-abcdef": "1000000000",
+                        "str:reserve|nested:str:MOA-abcdef": "2000000000",
+                        "str:total_supply": "2000000000",
+                        "str:total_fee_percent": "300",
+                        "str:special_fee_percent": "100",
+                        "str:transfer_exec_gas_limit": "35000000",
+                        "str:state": "1"
+                    },
+                    "code": "file:../dex_wasms/numbat_dex_pair.wasm"
+                },
+                "sc:dex_router": {
+                    "nonce": "0",
+                    "balance": "0",
+                    "storage": {
+                        "str:owner": "address:owner",
+                        "str:pair_map.info": "u32:3|u32:1|u32:3|u32:3",
+                        "str:pair_map.mapped|nested:str:MOA-abcdef|nested:str:WREWA-abcdef": "sc:moa_wrewa_swap",
+                        "str:pair_map.mapped|nested:str:WREWA-abcdef|nested:str:BUSD-abcdef": "sc:wrewa_busd_swap",
+                        "str:pair_map.mapped|nested:str:BUSD-abcdef|nested:str:MOA-abcdef": "sc:busd_moa_swap",
+                        "str:pair_map.node_id|nested:str:MOA-abcdef|nested:str:WREWA-abcdef": "1",
+                        "str:pair_map.node_id|nested:str:WREWA-abcdef|nested:str:BUSD-abcdef": "2",
+                        "str:pair_map.node_id|nested:str:BUSD-abcdef|nested:str:MOA-abcdef": "3",
+                        "str:pair_map.node_links|u32:1": "u32:0|u32:2",
+                        "str:pair_map.node_links|u32:2": "u32:1|u32:3",
+                        "str:pair_map.node_links|u32:3": "u32:2|u32:0",
+                        "str:pair_map.value|u32:1": "nested:str:MOA-abcdef|nested:str:WREWA-abcdef",
+                        "str:pair_map.value|u32:2": "nested:str:WREWA-abcdef|nested:str:BUSD-abcdef",
+                        "str:pair_map.value|u32:3": "nested:str:BUSD-abcdef|nested:str:MOA-abcdef",
+                        "str:transfer_exec_gas_limit": "35000000",
+                        "str:state": "1"
+                    },
+                    "code": "file:../dex_wasms/numbat_dex_router.wasm"
+                }
+            }
+        }
+    ]
+}
