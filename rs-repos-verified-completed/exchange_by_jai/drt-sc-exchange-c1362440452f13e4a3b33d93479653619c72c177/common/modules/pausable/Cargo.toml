@@ -11,7 +11,7 @@ path = "src/pausable.rs"
 path = "../permissions_module"
 
 [dependencies.dharitri-sc]
-version = "=1.11.2"           
+version = "=1.11.10"           
 features = ["dcdt-token-payment-legacy-decode"]
 
 # [dependencies.dharitri-sc]

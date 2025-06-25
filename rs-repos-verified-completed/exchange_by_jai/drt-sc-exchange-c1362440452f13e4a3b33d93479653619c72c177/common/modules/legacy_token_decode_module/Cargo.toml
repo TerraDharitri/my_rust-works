@@ -8,7 +8,7 @@ edition = "2018"
 path = "src/lib.rs"
 
 [dependencies.dharitri-sc]
-version = "=1.11.2"           
+version = "=1.11.10"           
 features = ["dcdt-token-payment-legacy-decode"]
 
 # [dependencies.dharitri-sc]

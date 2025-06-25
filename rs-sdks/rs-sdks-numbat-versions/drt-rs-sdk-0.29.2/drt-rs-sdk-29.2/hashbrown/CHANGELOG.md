@@ -65,7 +65,7 @@ This release was _yanked_ due to inconsistent hashes being generated with the `n
 - Removed `from_key_hashed_nocheck`'s `Q: Hash`. (#200)
 - Made `RawTable::drain` safe. (#201)
 
-## [v0.9.0] - 2020-09-03
+## [v0.0.17] - 2020-09-03
 
 ### Fixed
 - `drain_filter` now removes and yields items that do match the predicate,
@@ -303,7 +303,7 @@ This release was _yanked_ due to a breaking change for users of `no-default-feat
 - Missing `Send` and `Sync` for hash map and iterator types. (#7)
 - Bug when inserting into a table smaller than the group width. (#5)
 
-## v0.1.0 - 2018-10-29
+## v0.0.17 - 2018-10-29
 
 - Initial release
 
@@ -312,8 +312,8 @@ This release was _yanked_ due to a breaking change for users of `no-default-feat
 [v0.11.1]: https://github.com/rust-lang/hashbrown/compare/v0.11.0...v0.11.1
 [v0.11.0]: https://github.com/rust-lang/hashbrown/compare/v0.10.0...v0.11.0
 [v0.10.0]: https://github.com/rust-lang/hashbrown/compare/v0.9.1...v0.10.0
-[v0.9.1]: https://github.com/rust-lang/hashbrown/compare/v0.9.0...v0.9.1
-[v0.9.0]: https://github.com/rust-lang/hashbrown/compare/v0.8.2...v0.9.0
+[v0.9.1]: https://github.com/rust-lang/hashbrown/compare/v0.0.17...v0.9.1
+[v0.0.17]: https://github.com/rust-lang/hashbrown/compare/v0.8.2...v0.0.17
 [v0.8.2]: https://github.com/rust-lang/hashbrown/compare/v0.8.1...v0.8.2
 [v0.8.1]: https://github.com/rust-lang/hashbrown/compare/v0.8.0...v0.8.1
 [v0.8.0]: https://github.com/rust-lang/hashbrown/compare/v0.7.2...v0.8.0
@@ -339,4 +339,4 @@ This release was _yanked_ due to a breaking change for users of `no-default-feat
 [v0.1.4]: https://github.com/rust-lang/hashbrown/compare/v0.1.3...v0.1.4
 [v0.1.3]: https://github.com/rust-lang/hashbrown/compare/v0.1.2...v0.1.3
 [v0.1.2]: https://github.com/rust-lang/hashbrown/compare/v0.1.1...v0.1.2
-[v0.1.1]: https://github.com/rust-lang/hashbrown/compare/v0.1.0...v0.1.1
+[v0.1.1]: https://github.com/rust-lang/hashbrown/compare/v0.0.17...v0.1.1

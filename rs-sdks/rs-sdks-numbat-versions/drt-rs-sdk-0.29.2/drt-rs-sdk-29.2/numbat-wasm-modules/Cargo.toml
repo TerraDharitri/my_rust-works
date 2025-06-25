@@ -1,6 +1,6 @@
 [package]
 name = "numbat-wasm-modules"
-version = "0.29.2"
+version = "0.0.17"
 edition = "2018"
 
 authors = ["contact@dharitri.org"]
@@ -14,5 +14,5 @@ keywords = ["numbat", "wasm", "webassembly", "blockchain", "contract"]
 categories = ["no-std", "wasm", "cryptography::cryptocurrencies"]
 
 [dependencies.numbat-wasm]
-version = "0.29.2"
+version = "0.0.17"
 path = "../numbat-wasm"

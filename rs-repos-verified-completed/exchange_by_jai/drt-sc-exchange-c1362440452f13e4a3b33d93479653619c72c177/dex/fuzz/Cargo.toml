@@ -12,7 +12,7 @@ num-bigint = "0.4.2"
 rand = "0.8.4"
 
 [dependencies.dharitri-sc]
-version = "=1.11.2"           
+version = "=1.11.10"           
 features = ["dcdt-token-payment-legacy-decode"]
 
 # [dependencies.dharitri-sc]
@@ -20,7 +20,7 @@ features = ["dcdt-token-payment-legacy-decode"]
 # features = ["dcdt-token-payment-legacy-decode"]
 
 [dependencies.dharitri-sc-scenario]
-version = "=1.11.2" 
+version = "=1.11.10" 
 # [dependencies.dharitri-sc-scenario]
 # path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.50.1/framework/scenario"
 
