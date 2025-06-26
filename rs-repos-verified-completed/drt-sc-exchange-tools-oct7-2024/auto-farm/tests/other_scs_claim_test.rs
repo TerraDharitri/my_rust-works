@@ -2,8 +2,10 @@
 #![allow(clippy::too_many_arguments)]
 #![allow(dead_code)]
 
+use sc_whitelist_module::SCWhitelistModule;
 pub mod fees_collector_setup;
 pub mod metabonding_setup;
+
 
 use crate::fees_collector_setup::LOCKED_TOKEN_ID;
 use auto_farm::{
@@ -27,7 +29,6 @@ use dharitri_sc_scenario::{
     managed_address, managed_biguint, managed_token_id, rust_biguint,
     testing_framework::BlockchainStateWrapper, DebugApi,
 };
-use sc_whitelist_module::SCWhitelistModule;
 use tests_common::farm_with_locked_rewards_setup::FarmSetup;
 
 const FEE_PERCENTAGE: u64 = 1_000; // 10%

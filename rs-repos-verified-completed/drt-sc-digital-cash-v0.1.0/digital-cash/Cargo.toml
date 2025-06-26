@@ -8,14 +8,14 @@ publish = false
 [lib]
 path = "src/digital_cash.rs"
 
-# [dependencies.dharitri-sc]             # varsha#
-# version = "0.43.3"
-
-# [dev-dependencies.dharitri-sc-scenario]
-# version = "0.43.3"
-
-[dependencies.dharitri-sc]
-path = "/home/saikumar/Dugong/github-repos/github-teja/my_works/rs-sdks/drt-rs-sdk-0.43.3/framework/base"
+[dependencies.dharitri-sc]             # varsha#
+version = "=1.4.6"
 
 [dev-dependencies.dharitri-sc-scenario]
-path = "/home/saikumar/Dugong/github-repos/github-teja/my_works/rs-sdks/drt-rs-sdk-0.43.3/framework/scenario"
+version = "=1.4.6"
+
+# [dependencies.dharitri-sc]
+# path = "/home/dugong/Desktop/teja-work/my_rust-works/rs-sdks/rs-sdks-dharitri-versions/drt-rs-sdk-1.4.6/framework/base"
+
+# [dev-dependencies.dharitri-sc-scenario]
+# path = "/home/dugong/Desktop/teja-work/my_rust-works/rs-sdks/rs-sdks-dharitri-versions/drt-rs-sdk-1.4.6/framework/scenario"

@@ -26,73 +26,74 @@ path = "../common/modules/read_external_storage"
 
 [dependencies.farm]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/dex/farm"
 
 [dependencies.farm-with-locked-rewards]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/dex/farm-with-locked-rewards"
 
 [dependencies.farm-staking]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/farm-staking/farm-staking"
 
 [dependencies.farm-staking-proxy]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/farm-staking/farm-staking-proxy"
 
 [dependencies.pair]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/dex/pair"
 
 [dependencies.energy-factory]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/locked-asset/energy-factory"
 
 [dependencies.fees-collector]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb887c"
+tag = "v0.0.3"
+
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/energy-integration/fees-collector"
 
 [dependencies.metabonding]
 git = "https://github.com/TerraDharitri/drt-sc-metabonding"
-rev = "3f96948"
+tag = "v0.0.1"
 
 [dependencies.common_structs]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/common/common_structs"
 
 [dependencies.mergeable]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/common/traits/mergeable"
 
 [dependencies.utils]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/common/modules/utils"
 
 
 [dependencies.energy-query]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/energy-integration/common-modules/energy-query"
 
 [dependencies.legacy_token_decode_module]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/common/modules/legacy_token_decode_module"
 
 
 [dependencies.lkmoa-transfer]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/locked-asset/lkmoa-transfer"
 
 [dev-dependencies]
@@ -107,38 +108,38 @@ version = "=1.11.10"
 
 [dev-dependencies.simple-lock]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/locked-asset/simple-lock"
 
 
 [dev-dependencies.farm-boosted-yields]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/energy-integration/farm-boosted-yields"
 
 [dev-dependencies.config]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/common/modules/farm/config"
 
 [dev-dependencies.locking_module]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/common/modules/locking_module"
 
 [dev-dependencies.farm_token]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/common/modules/farm/farm_token"
 
 [dev-dependencies.pausable]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/common/modules/pausable"
 
 [dev-dependencies.sc_whitelist_module]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/common/modules/sc_whitelist_module"
 
 [dev-dependencies.tests-common]

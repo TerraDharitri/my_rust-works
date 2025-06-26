@@ -17,7 +17,7 @@ version = "=1.11.10"
 
 [dev-dependencies.pausable]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/common/modules/pausable"
 
 [dependencies.dharitri-sc]
@@ -34,20 +34,20 @@ version = "=1.11.10"
 
 [dependencies.farm]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/dex/farm"
 
 [dependencies.farm-with-locked-rewards]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/dex/farm-with-locked-rewards"
 
 [dependencies.pair]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/dex/pair"
 
 [dependencies.router]
 git = "https://github.com/TerraDharitri/drt-sc-exchange"
-rev = "efb88f7"
+tag = "v0.0.3"
 #path = "/home/dugong/Desktop/teja-work/my_works/rs-repos-verified-completed/drt-sc-exchange-3.0.7/drt-sc-exchange-3.0.7/dex/router"

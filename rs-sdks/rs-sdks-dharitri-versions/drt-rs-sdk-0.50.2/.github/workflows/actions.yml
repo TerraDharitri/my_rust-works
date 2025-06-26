@@ -18,7 +18,7 @@ jobs:
     with:
       rust-toolchain: stable
       path-to-sc-meta: framework/meta
-      drt-go-scenario-version: v2.1.0-alpha
+      drt-go-scenario-version: v0.0.2-3
       coverage-args: --ignore-filename-regex='meta/src' --ignore-filename-regex='wasm-adapter' --ignore-filename-regex='benchmarks/' --ignore-filename-regex='tests/' --output ./coverage.md
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
