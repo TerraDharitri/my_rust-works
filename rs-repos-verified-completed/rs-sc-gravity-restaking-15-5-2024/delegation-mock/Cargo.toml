@@ -7,18 +7,18 @@ publish = false
 
 [lib]
 path = "src/delegation.rs"
-# [dependencies.dharitri-sc]
-# version = "=0.48.0"
-
 [dependencies.dharitri-sc]
-path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.48.0/framework/base"
+version = "=1.9.0"
+
+# [dependencies.dharitri-sc]
+# path = "my_works/rs-sdks/drt-rs-sdk-0.48.0/framework/base"
 
 [dependencies.itertools]
 version = "0.10.1"
 default-features = false
 
-# [dev-dependencies.dharitri-sc-scenario]
-# version = "=0.48.0"
-
 [dev-dependencies.dharitri-sc-scenario]
-path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.48.0/framework/scenario"
+version = "=1.9.0"
+
+# [dev-dependencies.dharitri-sc-scenario]
+# path = "/home/dugong/Desktop/teja-work/my_works/rs-sdks/drt-rs-sdk-0.48.0/framework/scenario"
